@@ -129,34 +129,72 @@ class ApiConnection:
             print(res.status_code)
             return -1
 
-    # Method used to perform GET requests to the API.
+    # Method used to perform POST requests to the API.
     #
     # Input:
     #   - Valid POST API endpoint
     #   - POST body data in the form of a dictionary
     #
     # Output:
-    #   - Result of the request formated as JSON, or -1 if the status code is not 200.
+    #   - The resulting response code, or -1 if the response code is not 200.
     def api_post_request(self, endpoint, data):
         try:
             headers = {"Authorization": "Bearer "+self.access_token, "CompanyKey":self.company_key}
             res = requests.post(r"https://test.softrig.com/api/"+endpoint, json=data, headers=headers)
 
             if res.status_code == 200:
-                print("Hei")
                 return res.status_code
             else:
                 raise Exception("Problemer med å koble til API, har du riktig access token?")
         except Exception as err:
             print(err)
             print(res.status_code)
-            #print(res.content)
             return -1
 
-    def api_create_customer(self, company_name, org_number):
-        data = {"Info.Name":company_name,"OrgNumber":org_number}
+    # Method used to perform DELETE requests to the API.
+    #
+    # Input:
+    #   - Valid DELETE API endpoint
+    #   - DELETE body data in the form of a dictionary
+    #
+    # Output:
+    #   - The resulting response code, or -1 if the response code is not 204.
+    def api_delete_request(self, endpoint, data):
+        try:
+            headers = {"Authorization": "Bearer "+self.access_token, "CompanyKey":self.company_key}
+            res = requests.delete(r"https://test.softrig.com/api/"+endpoint, json=data, headers=headers)
+
+            if res.status_code == 204:
+                return res.status_code
+            else:
+                raise Exception("Problemer med å koble til API, har du riktig access token?")
+        except Exception as err:
+            print(err)
+            print(res.status_code)
+            return -1
+
+    # Method used to create new customers.
+    #
+    # Input:
+    #   - Company name
+    #   - Valid(?) organisation number
+    #
+    # Output:
+    #   - A boolean and a string, both indicating whether the customer was created. String used to give
+    #       user information on what went wrong if not successfully created.
+    def create_customer(self, company_name, *args):
+        data = {"Info": {"Name":company_name},"OrgNumber":args[0]}
 
         self.api_post_request(r"biz/customers", data)
+
+    def delete_customer(self, customer_id):
+        self.api_delete_request(r"biz/customers/"+customer_id, None)
+
+    def get_customers(self):
+        return json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True)
+
+
+
 
 
 
@@ -170,7 +208,7 @@ if __name__ == '__main__':
 
     #print(conn.access_token)
     conn.api_get_company_info()
-    #print(json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True))
-    print("VI tester")
-    conn.api_create_customer("Anders Tester", None)
 
+    #conn.create_customer("Anders Tester2", 1234624346)
+    print(conn.get_customers())
+    #conn.delete_customer("28")
