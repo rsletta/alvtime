@@ -143,7 +143,7 @@ class ApiConnection:
             res = requests.post(r"https://test.softrig.com/api/"+endpoint, json=data, headers=headers)
 
             if res.status_code == 200:
-                return res.status_code
+                return res.json()
             else:
                 raise Exception("Problemer med å koble til API, har du riktig access token?")
         except Exception as err:
@@ -173,6 +173,20 @@ class ApiConnection:
             print(res.status_code)
             return -1
 
+    def api_put_request(self, endpoint, data):
+        try:
+            headers = {"Authorization": "Bearer "+self.access_token, "CompanyKey":self.company_key}
+            res = requests.put(r"https://test.softrig.com/api/"+endpoint, json=data, headers=headers)
+
+            if res.status_code == 200:
+                return res.status_code
+            else:
+                raise Exception("Problemer med å koble til API, har du riktig access token?")
+        except Exception as err:
+            print(err)
+            print(res.status_code)
+            return -1
+
     # Method used to create new customers.
     #
     # Input:
@@ -185,13 +199,16 @@ class ApiConnection:
     def create_customer(self, company_name, *args):
         data = {"Info": {"Name":company_name},"OrgNumber":args[0]}
 
-        self.api_post_request(r"biz/customers", data)
+        return self.api_post_request(r"biz/customers", data)
 
     def delete_customer(self, customer_id):
         self.api_delete_request(r"biz/customers/"+customer_id, None)
 
     def get_customers(self):
         return json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True)
+
+    def change_customer_info(self, id, data):
+        self.api_put_request(r"biz/customers/"+str(id), data)
 
 
 
@@ -209,6 +226,7 @@ if __name__ == '__main__':
     #print(conn.access_token)
     conn.api_get_company_info()
 
-    #conn.create_customer("Anders Tester2", 1234624346)
-    print(conn.get_customers())
+    res = conn.create_customer("Anders Tester6", 123762624347)
+    conn.change_customer_info(res["ID"], {"ID":res["ID"], "AvtaleGiro": "true"})
+    #print(conn.get_customers())
     #conn.delete_customer("28")
