@@ -1,0 +1,40 @@
+# JournalEntryLineDraft
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**post_post_journal_entry_line_id** | **int** |  | [optional] 
+**description** | **str** |  | [optional] 
+**customer_invoice_id** | **int** |  | [optional] 
+**customer_order_id** | **int** |  | [optional] 
+**signature** | **str** |  | [optional] 
+**journal_entry_number** | **str** |  | [optional] 
+**account_id** | **int** |  | [optional] 
+**invoice_number** | **str** |  | [optional] 
+**dimensions_id** | **int** |  | [optional] 
+**accrual_id** | **int** |  | [optional] 
+**sub_account_id** | **int** |  | [optional] 
+**journal_entry_id** | **int** |  | [optional] 
+**status_code** | **int** |  | [optional] 
+**deleted** | **bool** |  | [optional] 
+**vat_period_id** | **int** |  | [optional] 
+**period_id** | **int** |  | [optional] 
+**payment_id** | **str** |  | [optional] 
+**id** | **int** |  | [optional] 
+**vat_type_id** | **int** |  | [optional] 
+**payment_info_type_id** | **int** |  | [optional] 
+**payment_reference_id** | **int** |  | [optional] 
+**currency_code_id** | **int** |  | [optional] 
+**updated_by** | **str** |  | [optional] 
+**created_by** | **str** |  | [optional] 
+**vat_deduction_percent** | **int** |  | [optional] 
+**journal_entry_number_numeric** | **int** |  | [optional] 
+**journal_entry_type_id** | **int** |  | [optional] 
+**supplier_invoice_id** | **int** |  | [optional] 
+**batch_number** | **int** |  | [optional] 
+**dimensions** | [**Dimensions**](Dimensions.md) |  | [optional] 
+**accrual** | [**Accrual**](Accrual.md) |  | [optional] 
+**custom_values** | [**CustomValues**](CustomValues.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

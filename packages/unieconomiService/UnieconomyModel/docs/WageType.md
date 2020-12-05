@@ -1,0 +1,45 @@
+# WageType
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**account_number** | **int** |  | [optional] 
+**postnr** | **str** |  | [optional] 
+**base_div3** | **bool** |  | [optional] 
+**base_vacation** | **bool** |  | [optional] 
+**description** | **str** |  | [optional] 
+**valid_year** | **int** |  | [optional] 
+**fixed_salary_holiday_deduction** | **bool** |  | [optional] 
+**get_rate_from** | **str** |  | [optional] 
+**standard_wage_type_for** | **str** |  | [optional] 
+**ratetype_column** | **str** |  | [optional] 
+**limit_type** | **str** |  | [optional] 
+**base_payment** | **bool** |  | [optional] 
+**status_code** | **int** |  | [optional] 
+**deleted** | **bool** |  | [optional] 
+**income_type** | **str** |  | [optional] 
+**limit_wage_type_number** | **int** |  | [optional] 
+**days_on_board** | **bool** |  | [optional] 
+**system_required_wage_type** | **int** |  | [optional] 
+**base_div2** | **bool** |  | [optional] 
+**account_number_balance** | **int** |  | [optional] 
+**no_number_of_hours** | **bool** |  | [optional] 
+**hide_from_paycheck** | **bool** |  | [optional] 
+**benefit** | **str** |  | [optional] 
+**special_tax_and_contributions_rule** | **str** |  | [optional] 
+**id** | **int** |  | [optional] 
+**base_employment_tax** | **bool** |  | [optional] 
+**updated_by** | **str** |  | [optional] 
+**special_tax_handling** | **str** |  | [optional] 
+**supplement_package** | **str** |  | [optional] 
+**created_by** | **str** |  | [optional] 
+**wage_type_number** | **int** |  | [optional] 
+**special_aga_rule** | **str** |  | [optional] 
+**systemtype** | **str** |  | [optional] 
+**wage_type_name** | **str** |  | [optional] 
+**taxtype** | **str** |  | [optional] 
+**supplementary_informations** | [**list[WageTypeSupplement]**](WageTypeSupplement.md) |  | [optional] 
+**custom_values** | [**CustomValues**](CustomValues.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

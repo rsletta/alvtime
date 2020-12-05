@@ -1,0 +1,48 @@
+# Payment
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**payment_notification_report_file_id** | **int** |  | [optional] 
+**is_external** | **bool** |  | [optional] 
+**business_relation_id** | **int** |  | [optional] 
+**payment_code_id** | **int** |  | [optional] 
+**description** | **str** |  | [optional] 
+**customer_invoice_id** | **int** |  | [optional] 
+**debtor** | **str** |  | [optional] 
+**serial_number_or_acct_svcr_ref** | **str** |  | [optional] 
+**is_payment_claim** | **bool** |  | [optional] 
+**auto_journal** | **bool** |  | [optional] 
+**invoice_number** | **str** |  | [optional] 
+**from_bank_account_id** | **int** |  | [optional] 
+**ocr_payment_strings** | **str** |  | [optional] 
+**xml_tag_pmt_inf_id_reference** | **str** |  | [optional] 
+**journal_entry_id** | **int** |  | [optional] 
+**external_bank_account_number** | **str** |  | [optional] 
+**status_code** | **int** |  | [optional] 
+**deleted** | **bool** |  | [optional] 
+**reconcile_payment** | **bool** |  | [optional] 
+**xml_tag_end_to_end_id_reference** | **str** |  | [optional] 
+**domain** | **str** |  | [optional] 
+**is_payment_cancellation_request** | **bool** |  | [optional] 
+**in_payment_id** | **str** |  | [optional] 
+**customer_invoice_reminder_id** | **int** |  | [optional] 
+**payment_batch_id** | **int** |  | [optional] 
+**to_bank_account_id** | **int** |  | [optional] 
+**payment_id** | **str** |  | [optional] 
+**id** | **int** |  | [optional] 
+**currency_code_id** | **int** |  | [optional] 
+**updated_by** | **str** |  | [optional] 
+**payment_status_report_file_id** | **int** |  | [optional] 
+**created_by** | **str** |  | [optional] 
+**proprietary** | **str** |  | [optional] 
+**status_text** | **str** |  | [optional] 
+**supplier_invoice_id** | **int** |  | [optional] 
+**is_customer_payment** | **bool** |  | [optional] 
+**customer_invoice** | [**CustomerInvoice**](CustomerInvoice.md) |  | [optional] 
+**supplier_invoice** | [**SupplierInvoice**](SupplierInvoice.md) |  | [optional] 
+**customer_invoice_reminder** | [**CustomerInvoiceReminder**](CustomerInvoiceReminder.md) |  | [optional] 
+**custom_values** | [**CustomValues**](CustomValues.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
