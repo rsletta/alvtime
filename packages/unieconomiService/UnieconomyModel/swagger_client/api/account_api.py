@@ -898,13 +898,13 @@ class AccountApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def accounts_idactionis_account_used_get(self, id, id, **kwargs):  # noqa: E501
+    def accounts_idactionis_account_used_get(self, id, **kwargs):  # noqa: E501
         """accounts_idactionis_account_used_get  # noqa: E501
 
         is-account-used Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.accounts_idactionis_account_used_get(id, id, async_req=True)
+        >>> thread = api.accounts_idactionis_account_used_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -916,18 +916,18 @@ class AccountApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.accounts_idactionis_account_used_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.accounts_idactionis_account_used_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.accounts_idactionis_account_used_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.accounts_idactionis_account_used_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def accounts_idactionis_account_used_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def accounts_idactionis_account_used_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """accounts_idactionis_account_used_get  # noqa: E501
 
         is-account-used Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.accounts_idactionis_account_used_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.accounts_idactionis_account_used_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

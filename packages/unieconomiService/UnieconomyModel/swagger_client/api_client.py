@@ -59,7 +59,7 @@ class ApiClient(object):
     }
 
     def __init__(self, configuration=None, header_name=None, header_value=None,
-                 cookie=None):
+                 cookie=None, MyHeader=None):
         if configuration is None:
             configuration = Configuration()
         self.configuration = configuration
@@ -69,6 +69,8 @@ class ApiClient(object):
         self.default_headers = {}
         if header_name is not None:
             self.default_headers[header_name] = header_value
+        if MyHeader is not None:
+            self.default_headers = MyHeader
         self.cookie = cookie
         # Set default User-Agent.
         self.user_agent = 'Swagger-Codegen/1.0.0/python'

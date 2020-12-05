@@ -249,7 +249,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **regulatives_idactionimport_post**
-> Regulative regulatives_idactionimport_post(id, id, file_id)
+> Regulative regulatives_idactionimport_post(id, file_id)
 
 
 
@@ -270,7 +270,7 @@ id = swagger_client.Object() # Object |
 file_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.regulatives_idactionimport_post(id, id, file_id)
+    api_response = api_instance.regulatives_idactionimport_post(id, file_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling RegulativeApi->regulatives_idactionimport_post: %s\n" % e)

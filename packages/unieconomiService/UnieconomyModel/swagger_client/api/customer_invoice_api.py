@@ -542,13 +542,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactioncalculate_vat_summary_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncalculate_vat_summary_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncalculate_vat_summary_get  # noqa: E501
 
         calculate-vat-summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncalculate_vat_summary_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncalculate_vat_summary_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -560,18 +560,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactioncalculate_vat_summary_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactioncalculate_vat_summary_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactioncalculate_vat_summary_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactioncalculate_vat_summary_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactioncalculate_vat_summary_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncalculate_vat_summary_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncalculate_vat_summary_get  # noqa: E501
 
         calculate-vat-summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncalculate_vat_summary_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncalculate_vat_summary_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -645,13 +645,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactioncreate_credit_draft_invoice_put(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncreate_credit_draft_invoice_put(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncreate_credit_draft_invoice_put  # noqa: E501
 
         create-credit-draft-invoice Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncreate_credit_draft_invoice_put(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncreate_credit_draft_invoice_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -663,18 +663,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactioncreate_credit_draft_invoice_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncreate_credit_draft_invoice_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncreate_credit_draft_invoice_put  # noqa: E501
 
         create-credit-draft-invoice Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncreate_credit_draft_invoice_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -748,13 +748,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactioncreate_invoice_journalentrydraft_put(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncreate_invoice_journalentrydraft_put(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncreate_invoice_journalentrydraft_put  # noqa: E501
 
         create-invoice-journalentrydraft Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncreate_invoice_journalentrydraft_put(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncreate_invoice_journalentrydraft_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -766,18 +766,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactioncreate_invoice_journalentrydraft_put  # noqa: E501
 
         create-invoice-journalentrydraft Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactioncreate_invoice_journalentrydraft_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -851,13 +851,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionfulfill_aprila_offer_post(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionfulfill_aprila_offer_post(self, id, **kwargs):  # noqa: E501
         """invoices_idactionfulfill_aprila_offer_post  # noqa: E501
 
         fulfill-aprila-offer Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionfulfill_aprila_offer_post(id, id, async_req=True)
+        >>> thread = api.invoices_idactionfulfill_aprila_offer_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -869,18 +869,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionfulfill_aprila_offer_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionfulfill_aprila_offer_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionfulfill_aprila_offer_post  # noqa: E501
 
         fulfill-aprila-offer Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionfulfill_aprila_offer_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -954,13 +954,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionget_aprila_offer_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionget_aprila_offer_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactionget_aprila_offer_get  # noqa: E501
 
         get-aprila-offer Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionget_aprila_offer_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactionget_aprila_offer_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -972,18 +972,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionget_aprila_offer_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionget_aprila_offer_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionget_aprila_offer_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionget_aprila_offer_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionget_aprila_offer_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionget_aprila_offer_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionget_aprila_offer_get  # noqa: E501
 
         get-aprila-offer Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionget_aprila_offer_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionget_aprila_offer_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1057,13 +1057,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionget_payments_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionget_payments_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactionget_payments_get  # noqa: E501
 
         get-payments Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionget_payments_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactionget_payments_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1075,18 +1075,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionget_payments_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionget_payments_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionget_payments_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionget_payments_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionget_payments_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionget_payments_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionget_payments_get  # noqa: E501
 
         get-payments Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionget_payments_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionget_payments_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1160,13 +1160,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactioninvoice_post(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioninvoice_post(self, id, **kwargs):  # noqa: E501
         """invoices_idactioninvoice_post  # noqa: E501
 
         invoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioninvoice_post(id, id, async_req=True)
+        >>> thread = api.invoices_idactioninvoice_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1178,18 +1178,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactioninvoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactioninvoice_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactioninvoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactioninvoice_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactioninvoice_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactioninvoice_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactioninvoice_post  # noqa: E501
 
         invoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactioninvoice_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactioninvoice_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1263,13 +1263,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionnext_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionnext_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactionnext_get  # noqa: E501
 
         next Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionnext_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactionnext_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1281,18 +1281,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionnext_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionnext_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionnext_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionnext_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionnext_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionnext_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionnext_get  # noqa: E501
 
         next Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionnext_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionnext_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1596,13 +1596,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionpay_post(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionpay_post(self, id, **kwargs):  # noqa: E501
         """invoices_idactionpay_post  # noqa: E501
 
         pay Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionpay_post(id, id, async_req=True)
+        >>> thread = api.invoices_idactionpay_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1614,18 +1614,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionpay_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionpay_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionpay_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionpay_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionpay_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionpay_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionpay_post  # noqa: E501
 
         pay Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionpay_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionpay_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1699,13 +1699,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionprevious_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionprevious_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactionprevious_get  # noqa: E501
 
         previous Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionprevious_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactionprevious_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1717,18 +1717,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionprevious_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionprevious_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionprevious_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionprevious_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionprevious_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionprevious_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionprevious_get  # noqa: E501
 
         previous Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionprevious_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionprevious_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1802,13 +1802,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionset_customer_invoice_printstatus_put(self, id, id, print_status, **kwargs):  # noqa: E501
+    def invoices_idactionset_customer_invoice_printstatus_put(self, id, print_status, **kwargs):  # noqa: E501
         """invoices_idactionset_customer_invoice_printstatus_put  # noqa: E501
 
         set-customer-invoice-printstatus Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionset_customer_invoice_printstatus_put(id, id, print_status, async_req=True)
+        >>> thread = api.invoices_idactionset_customer_invoice_printstatus_put(id, print_status, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1821,18 +1821,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, id, print_status, **kwargs)  # noqa: E501
+            return self.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, print_status, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, id, print_status, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, print_status, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionset_customer_invoice_printstatus_put_with_http_info(self, id, id, print_status, **kwargs):  # noqa: E501
+    def invoices_idactionset_customer_invoice_printstatus_put_with_http_info(self, id, print_status, **kwargs):  # noqa: E501
         """invoices_idactionset_customer_invoice_printstatus_put  # noqa: E501
 
         set-customer-invoice-printstatus Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, id, print_status, async_req=True)
+        >>> thread = api.invoices_idactionset_customer_invoice_printstatus_put_with_http_info(id, print_status, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1913,13 +1913,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactiontoggle_reminder_stop_put(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactiontoggle_reminder_stop_put(self, id, **kwargs):  # noqa: E501
         """invoices_idactiontoggle_reminder_stop_put  # noqa: E501
 
         toggle-reminder-stop Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactiontoggle_reminder_stop_put(id, id, async_req=True)
+        >>> thread = api.invoices_idactiontoggle_reminder_stop_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1931,18 +1931,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactiontoggle_reminder_stop_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactiontoggle_reminder_stop_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactiontoggle_reminder_stop_put  # noqa: E501
 
         toggle-reminder-stop Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactiontoggle_reminder_stop_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2127,13 +2127,13 @@ class CustomerInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def invoices_idactionvalidate_vipps_user_get(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionvalidate_vipps_user_get(self, id, **kwargs):  # noqa: E501
         """invoices_idactionvalidate_vipps_user_get  # noqa: E501
 
         validate-vipps-user Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionvalidate_vipps_user_get(id, id, async_req=True)
+        >>> thread = api.invoices_idactionvalidate_vipps_user_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2145,18 +2145,18 @@ class CustomerInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.invoices_idactionvalidate_vipps_user_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.invoices_idactionvalidate_vipps_user_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.invoices_idactionvalidate_vipps_user_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.invoices_idactionvalidate_vipps_user_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def invoices_idactionvalidate_vipps_user_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def invoices_idactionvalidate_vipps_user_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """invoices_idactionvalidate_vipps_user_get  # noqa: E501
 
         validate-vipps-user Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.invoices_idactionvalidate_vipps_user_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.invoices_idactionvalidate_vipps_user_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

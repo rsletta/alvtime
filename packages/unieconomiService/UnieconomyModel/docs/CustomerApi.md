@@ -1,6 +1,6 @@
 # swagger_client.CustomerApi
 
-All URIs are relative to *http://test-api.softrig.com/api/biz*
+All URIs are relative to *https://test-api.softrig.com/api/biz*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

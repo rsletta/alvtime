@@ -415,13 +415,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactionactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactionactivate_post(self, id, **kwargs):  # noqa: E501
         """budgets_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionactivate_post(id, id, async_req=True)
+        >>> thread = api.budgets_idactionactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.budgets_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactionactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactionactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """budgets_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.budgets_idactionactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactiondeactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiondeactivate_post(self, id, **kwargs):  # noqa: E501
         """budgets_idactiondeactivate_post  # noqa: E501
 
         deactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiondeactivate_post(id, id, async_req=True)
+        >>> thread = api.budgets_idactiondeactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactiondeactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.budgets_idactiondeactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactiondeactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactiondeactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactiondeactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiondeactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """budgets_idactiondeactivate_post  # noqa: E501
 
         deactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiondeactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.budgets_idactiondeactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactiondetails_get(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiondetails_get(self, id, **kwargs):  # noqa: E501
         """budgets_idactiondetails_get  # noqa: E501
 
         details Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiondetails_get(id, id, async_req=True)
+        >>> thread = api.budgets_idactiondetails_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactiondetails_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.budgets_idactiondetails_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactiondetails_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactiondetails_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactiondetails_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiondetails_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """budgets_idactiondetails_get  # noqa: E501
 
         details Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiondetails_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.budgets_idactiondetails_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -724,13 +724,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactionexcelbudget_post(self, id, id, fileid, departmentid, **kwargs):  # noqa: E501
+    def budgets_idactionexcelbudget_post(self, id, fileid, departmentid, **kwargs):  # noqa: E501
         """budgets_idactionexcelbudget_post  # noqa: E501
 
         excelbudget Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionexcelbudget_post(id, id, fileid, departmentid, async_req=True)
+        >>> thread = api.budgets_idactionexcelbudget_post(id, fileid, departmentid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -744,18 +744,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactionexcelbudget_post_with_http_info(id, id, fileid, departmentid, **kwargs)  # noqa: E501
+            return self.budgets_idactionexcelbudget_post_with_http_info(id, fileid, departmentid, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactionexcelbudget_post_with_http_info(id, id, fileid, departmentid, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactionexcelbudget_post_with_http_info(id, fileid, departmentid, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactionexcelbudget_post_with_http_info(self, id, id, fileid, departmentid, **kwargs):  # noqa: E501
+    def budgets_idactionexcelbudget_post_with_http_info(self, id, fileid, departmentid, **kwargs):  # noqa: E501
         """budgets_idactionexcelbudget_post  # noqa: E501
 
         excelbudget Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionexcelbudget_post_with_http_info(id, id, fileid, departmentid, async_req=True)
+        >>> thread = api.budgets_idactionexcelbudget_post_with_http_info(id, fileid, departmentid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -843,13 +843,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactiongetexcelbudget_get(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiongetexcelbudget_get(self, id, **kwargs):  # noqa: E501
         """budgets_idactiongetexcelbudget_get  # noqa: E501
 
         getexcelbudget Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiongetexcelbudget_get(id, id, async_req=True)
+        >>> thread = api.budgets_idactiongetexcelbudget_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -861,18 +861,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactiongetexcelbudget_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.budgets_idactiongetexcelbudget_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactiongetexcelbudget_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactiongetexcelbudget_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactiongetexcelbudget_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactiongetexcelbudget_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """budgets_idactiongetexcelbudget_get  # noqa: E501
 
         getexcelbudget Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactiongetexcelbudget_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.budgets_idactiongetexcelbudget_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -946,13 +946,13 @@ class BudgetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def budgets_idactionsummary_get(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactionsummary_get(self, id, **kwargs):  # noqa: E501
         """budgets_idactionsummary_get  # noqa: E501
 
         summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionsummary_get(id, id, async_req=True)
+        >>> thread = api.budgets_idactionsummary_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -964,18 +964,18 @@ class BudgetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.budgets_idactionsummary_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.budgets_idactionsummary_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.budgets_idactionsummary_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.budgets_idactionsummary_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def budgets_idactionsummary_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def budgets_idactionsummary_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """budgets_idactionsummary_get  # noqa: E501
 
         summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.budgets_idactionsummary_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.budgets_idactionsummary_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

@@ -415,13 +415,13 @@ class PaymentApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payments_idactiondelete_and_credit_delete(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactiondelete_and_credit_delete(self, id, **kwargs):  # noqa: E501
         """payments_idactiondelete_and_credit_delete  # noqa: E501
 
         delete-and-credit Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactiondelete_and_credit_delete(id, id, async_req=True)
+        >>> thread = api.payments_idactiondelete_and_credit_delete(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class PaymentApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payments_idactiondelete_and_credit_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payments_idactiondelete_and_credit_delete_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payments_idactiondelete_and_credit_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payments_idactiondelete_and_credit_delete_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payments_idactiondelete_and_credit_delete_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactiondelete_and_credit_delete_with_http_info(self, id, **kwargs):  # noqa: E501
         """payments_idactiondelete_and_credit_delete  # noqa: E501
 
         delete-and-credit Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactiondelete_and_credit_delete_with_http_info(id, id, async_req=True)
+        >>> thread = api.payments_idactiondelete_and_credit_delete_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class PaymentApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payments_idactionforce_delete_and_credit_delete(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactionforce_delete_and_credit_delete(self, id, **kwargs):  # noqa: E501
         """payments_idactionforce_delete_and_credit_delete  # noqa: E501
 
         force-delete-and-credit Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactionforce_delete_and_credit_delete(id, id, async_req=True)
+        >>> thread = api.payments_idactionforce_delete_and_credit_delete(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class PaymentApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payments_idactionforce_delete_and_credit_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payments_idactionforce_delete_and_credit_delete_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payments_idactionforce_delete_and_credit_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payments_idactionforce_delete_and_credit_delete_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payments_idactionforce_delete_and_credit_delete_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactionforce_delete_and_credit_delete_with_http_info(self, id, **kwargs):  # noqa: E501
         """payments_idactionforce_delete_and_credit_delete  # noqa: E501
 
         force-delete-and-credit Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactionforce_delete_and_credit_delete_with_http_info(id, id, async_req=True)
+        >>> thread = api.payments_idactionforce_delete_and_credit_delete_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class PaymentApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payments_idactionforce_delete_delete(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactionforce_delete_delete(self, id, **kwargs):  # noqa: E501
         """payments_idactionforce_delete_delete  # noqa: E501
 
         force-delete Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactionforce_delete_delete(id, id, async_req=True)
+        >>> thread = api.payments_idactionforce_delete_delete(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class PaymentApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payments_idactionforce_delete_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payments_idactionforce_delete_delete_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payments_idactionforce_delete_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payments_idactionforce_delete_delete_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payments_idactionforce_delete_delete_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payments_idactionforce_delete_delete_with_http_info(self, id, **kwargs):  # noqa: E501
         """payments_idactionforce_delete_delete  # noqa: E501
 
         force-delete Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payments_idactionforce_delete_delete_with_http_info(id, id, async_req=True)
+        >>> thread = api.payments_idactionforce_delete_delete_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

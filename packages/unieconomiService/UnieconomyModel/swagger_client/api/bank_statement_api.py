@@ -415,13 +415,13 @@ class BankStatementApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def bankstatements_idactioncomplete_post(self, id, id, **kwargs):  # noqa: E501
+    def bankstatements_idactioncomplete_post(self, id, **kwargs):  # noqa: E501
         """bankstatements_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankstatements_idactioncomplete_post(id, id, async_req=True)
+        >>> thread = api.bankstatements_idactioncomplete_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class BankStatementApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.bankstatements_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.bankstatements_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.bankstatements_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.bankstatements_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def bankstatements_idactioncomplete_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def bankstatements_idactioncomplete_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """bankstatements_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankstatements_idactioncomplete_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.bankstatements_idactioncomplete_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class BankStatementApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def bankstatements_idactionreopen_post(self, id, id, **kwargs):  # noqa: E501
+    def bankstatements_idactionreopen_post(self, id, **kwargs):  # noqa: E501
         """bankstatements_idactionreopen_post  # noqa: E501
 
         reopen Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankstatements_idactionreopen_post(id, id, async_req=True)
+        >>> thread = api.bankstatements_idactionreopen_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class BankStatementApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.bankstatements_idactionreopen_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.bankstatements_idactionreopen_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.bankstatements_idactionreopen_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.bankstatements_idactionreopen_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def bankstatements_idactionreopen_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def bankstatements_idactionreopen_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """bankstatements_idactionreopen_post  # noqa: E501
 
         reopen Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankstatements_idactionreopen_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.bankstatements_idactionreopen_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

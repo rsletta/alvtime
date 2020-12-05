@@ -31,13 +31,13 @@ class AmeldingSumUpApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def ameldingsums_idactionget_sumup_get(self, id, id, **kwargs):  # noqa: E501
+    def ameldingsums_idactionget_sumup_get(self, id, **kwargs):  # noqa: E501
         """ameldingsums_idactionget_sumup_get  # noqa: E501
 
         get-sumup Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.ameldingsums_idactionget_sumup_get(id, id, async_req=True)
+        >>> thread = api.ameldingsums_idactionget_sumup_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -49,18 +49,18 @@ class AmeldingSumUpApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.ameldingsums_idactionget_sumup_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.ameldingsums_idactionget_sumup_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.ameldingsums_idactionget_sumup_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.ameldingsums_idactionget_sumup_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def ameldingsums_idactionget_sumup_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def ameldingsums_idactionget_sumup_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """ameldingsums_idactionget_sumup_get  # noqa: E501
 
         get-sumup Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.ameldingsums_idactionget_sumup_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.ameldingsums_idactionget_sumup_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

@@ -415,13 +415,13 @@ class AssetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def assets_idactionsellasset_post(self, id, id, **kwargs):  # noqa: E501
+    def assets_idactionsellasset_post(self, id, **kwargs):  # noqa: E501
         """assets_idactionsellasset_post  # noqa: E501
 
         sellasset Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.assets_idactionsellasset_post(id, id, async_req=True)
+        >>> thread = api.assets_idactionsellasset_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class AssetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.assets_idactionsellasset_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.assets_idactionsellasset_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.assets_idactionsellasset_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.assets_idactionsellasset_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def assets_idactionsellasset_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def assets_idactionsellasset_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """assets_idactionsellasset_post  # noqa: E501
 
         sellasset Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.assets_idactionsellasset_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.assets_idactionsellasset_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class AssetApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def assets_idactionsetassetaslost_post(self, id, id, **kwargs):  # noqa: E501
+    def assets_idactionsetassetaslost_post(self, id, **kwargs):  # noqa: E501
         """assets_idactionsetassetaslost_post  # noqa: E501
 
         setassetaslost Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.assets_idactionsetassetaslost_post(id, id, async_req=True)
+        >>> thread = api.assets_idactionsetassetaslost_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class AssetApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.assets_idactionsetassetaslost_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.assets_idactionsetassetaslost_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.assets_idactionsetassetaslost_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.assets_idactionsetassetaslost_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def assets_idactionsetassetaslost_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def assets_idactionsetassetaslost_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """assets_idactionsetassetaslost_post  # noqa: E501
 
         setassetaslost Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.assets_idactionsetassetaslost_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.assets_idactionsetassetaslost_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

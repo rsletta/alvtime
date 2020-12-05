@@ -308,13 +308,13 @@ class NotificationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def notifications_idactionmark_as_marked_put(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_marked_put(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_marked_put  # noqa: E501
 
         mark-as-marked Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_marked_put(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_marked_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -326,18 +326,18 @@ class NotificationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.notifications_idactionmark_as_marked_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.notifications_idactionmark_as_marked_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.notifications_idactionmark_as_marked_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.notifications_idactionmark_as_marked_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def notifications_idactionmark_as_marked_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_marked_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_marked_put  # noqa: E501
 
         mark-as-marked Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_marked_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_marked_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -411,13 +411,13 @@ class NotificationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def notifications_idactionmark_as_read_put(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_read_put(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_read_put  # noqa: E501
 
         mark-as-read Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_read_put(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_read_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -429,18 +429,18 @@ class NotificationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.notifications_idactionmark_as_read_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.notifications_idactionmark_as_read_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.notifications_idactionmark_as_read_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.notifications_idactionmark_as_read_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def notifications_idactionmark_as_read_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_read_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_read_put  # noqa: E501
 
         mark-as-read Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_read_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_read_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -514,13 +514,13 @@ class NotificationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def notifications_idactionmark_as_unread_put(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_unread_put(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_unread_put  # noqa: E501
 
         mark-as-unread Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_unread_put(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_unread_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -532,18 +532,18 @@ class NotificationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.notifications_idactionmark_as_unread_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.notifications_idactionmark_as_unread_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.notifications_idactionmark_as_unread_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.notifications_idactionmark_as_unread_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def notifications_idactionmark_as_unread_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def notifications_idactionmark_as_unread_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """notifications_idactionmark_as_unread_put  # noqa: E501
 
         mark-as-unread Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.notifications_idactionmark_as_unread_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.notifications_idactionmark_as_unread_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

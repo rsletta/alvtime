@@ -213,13 +213,13 @@ class ApprovalApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def approvals_idactionapprove_post(self, id, id, **kwargs):  # noqa: E501
+    def approvals_idactionapprove_post(self, id, **kwargs):  # noqa: E501
         """approvals_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approvals_idactionapprove_post(id, id, async_req=True)
+        >>> thread = api.approvals_idactionapprove_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -231,18 +231,18 @@ class ApprovalApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.approvals_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.approvals_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.approvals_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.approvals_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def approvals_idactionapprove_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def approvals_idactionapprove_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """approvals_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approvals_idactionapprove_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.approvals_idactionapprove_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -316,13 +316,13 @@ class ApprovalApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def approvals_idactionreject_post(self, id, id, **kwargs):  # noqa: E501
+    def approvals_idactionreject_post(self, id, **kwargs):  # noqa: E501
         """approvals_idactionreject_post  # noqa: E501
 
         reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approvals_idactionreject_post(id, id, async_req=True)
+        >>> thread = api.approvals_idactionreject_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -334,18 +334,18 @@ class ApprovalApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.approvals_idactionreject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.approvals_idactionreject_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.approvals_idactionreject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.approvals_idactionreject_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def approvals_idactionreject_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def approvals_idactionreject_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """approvals_idactionreject_post  # noqa: E501
 
         reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approvals_idactionreject_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.approvals_idactionreject_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

@@ -415,13 +415,13 @@ class RegulativeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def regulatives_idactionexport_get(self, id, id, **kwargs):  # noqa: E501
+    def regulatives_idactionexport_get(self, id, **kwargs):  # noqa: E501
         """regulatives_idactionexport_get  # noqa: E501
 
         export Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.regulatives_idactionexport_get(id, id, async_req=True)
+        >>> thread = api.regulatives_idactionexport_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class RegulativeApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.regulatives_idactionexport_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.regulatives_idactionexport_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.regulatives_idactionexport_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.regulatives_idactionexport_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def regulatives_idactionexport_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def regulatives_idactionexport_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """regulatives_idactionexport_get  # noqa: E501
 
         export Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.regulatives_idactionexport_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.regulatives_idactionexport_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class RegulativeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def regulatives_idactionimport_post(self, id, id, file_id, **kwargs):  # noqa: E501
+    def regulatives_idactionimport_post(self, id, file_id, **kwargs):  # noqa: E501
         """regulatives_idactionimport_post  # noqa: E501
 
         import Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.regulatives_idactionimport_post(id, id, file_id, async_req=True)
+        >>> thread = api.regulatives_idactionimport_post(id, file_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -537,18 +537,18 @@ class RegulativeApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.regulatives_idactionimport_post_with_http_info(id, id, file_id, **kwargs)  # noqa: E501
+            return self.regulatives_idactionimport_post_with_http_info(id, file_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.regulatives_idactionimport_post_with_http_info(id, id, file_id, **kwargs)  # noqa: E501
+            (data) = self.regulatives_idactionimport_post_with_http_info(id, file_id, **kwargs)  # noqa: E501
             return data
 
-    def regulatives_idactionimport_post_with_http_info(self, id, id, file_id, **kwargs):  # noqa: E501
+    def regulatives_idactionimport_post_with_http_info(self, id, file_id, **kwargs):  # noqa: E501
         """regulatives_idactionimport_post  # noqa: E501
 
         import Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.regulatives_idactionimport_post_with_http_info(id, id, file_id, async_req=True)
+        >>> thread = api.regulatives_idactionimport_post_with_http_info(id, file_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

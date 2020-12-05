@@ -415,13 +415,13 @@ class CustomerOrderItemApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def orderitems_idactioncomplete_post(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactioncomplete_post(self, id, **kwargs):  # noqa: E501
         """orderitems_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactioncomplete_post(id, id, async_req=True)
+        >>> thread = api.orderitems_idactioncomplete_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class CustomerOrderItemApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.orderitems_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.orderitems_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.orderitems_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.orderitems_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def orderitems_idactioncomplete_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactioncomplete_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """orderitems_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactioncomplete_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.orderitems_idactioncomplete_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class CustomerOrderItemApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def orderitems_idactionregister_post(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactionregister_post(self, id, **kwargs):  # noqa: E501
         """orderitems_idactionregister_post  # noqa: E501
 
         register Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactionregister_post(id, id, async_req=True)
+        >>> thread = api.orderitems_idactionregister_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class CustomerOrderItemApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.orderitems_idactionregister_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.orderitems_idactionregister_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.orderitems_idactionregister_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.orderitems_idactionregister_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def orderitems_idactionregister_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactionregister_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """orderitems_idactionregister_post  # noqa: E501
 
         register Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactionregister_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.orderitems_idactionregister_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class CustomerOrderItemApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def orderitems_idactionto_invoice_post(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactionto_invoice_post(self, id, **kwargs):  # noqa: E501
         """orderitems_idactionto_invoice_post  # noqa: E501
 
         toInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactionto_invoice_post(id, id, async_req=True)
+        >>> thread = api.orderitems_idactionto_invoice_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class CustomerOrderItemApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.orderitems_idactionto_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.orderitems_idactionto_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.orderitems_idactionto_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.orderitems_idactionto_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def orderitems_idactionto_invoice_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def orderitems_idactionto_invoice_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """orderitems_idactionto_invoice_post  # noqa: E501
 
         toInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.orderitems_idactionto_invoice_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.orderitems_idactionto_invoice_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

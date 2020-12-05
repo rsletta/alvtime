@@ -6,6 +6,9 @@ import jwt
 import json
 from datetime import datetime, timedelta
 
+from swagger_client import Customer, ApiClient, CustomerApi, BusinessRelationApi
+
+
 class ApiConnection:
 
     def __init__(self, client_id, audience, api_base_url):
@@ -213,6 +216,18 @@ class ApiConnection:
     def get_customers(self):
         return json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True)
 
+    def get_customersNew(self):
+        headers = {"Authorization": "Bearer " + self.access_token, "CompanyKey": self.company_key}
+        apiClient = ApiClient(MyHeader=headers)
+        customerApi = CustomerApi(apiClient)
+        stuff = customerApi.customers_get()
+        stuff2 = customerApi.customers_id_get(38)  #type: Customer
+        BR = BusinessRelationApi(apiClient).business_relations_id_get(stuff2.business_relation_id)
+
+        # stuff = apiClient.call_api(r"/customers", "GET")
+        respons = conn.api_get_request(r"biz/customers")
+        return json.dumps(respons,indent=4, sort_keys=True)
+
     def change_customer_info(self, id, data):
         self.api_put_request(r"biz/customers/"+str(id), data)
 
@@ -227,3 +242,5 @@ if __name__ == '__main__':
 
     #print(conn.access_token)
     conn.api_get_company_info()
+    stuff = conn.get_customers()
+    conn.get_customersNew()

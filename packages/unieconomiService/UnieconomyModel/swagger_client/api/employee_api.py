@@ -605,13 +605,13 @@ class EmployeeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def employees_idactionsetcategories_put(self, id, id, categories, **kwargs):  # noqa: E501
+    def employees_idactionsetcategories_put(self, id, categories, **kwargs):  # noqa: E501
         """employees_idactionsetcategories_put  # noqa: E501
 
         setcategories Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employees_idactionsetcategories_put(id, id, categories, async_req=True)
+        >>> thread = api.employees_idactionsetcategories_put(id, categories, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -624,18 +624,18 @@ class EmployeeApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.employees_idactionsetcategories_put_with_http_info(id, id, categories, **kwargs)  # noqa: E501
+            return self.employees_idactionsetcategories_put_with_http_info(id, categories, **kwargs)  # noqa: E501
         else:
-            (data) = self.employees_idactionsetcategories_put_with_http_info(id, id, categories, **kwargs)  # noqa: E501
+            (data) = self.employees_idactionsetcategories_put_with_http_info(id, categories, **kwargs)  # noqa: E501
             return data
 
-    def employees_idactionsetcategories_put_with_http_info(self, id, id, categories, **kwargs):  # noqa: E501
+    def employees_idactionsetcategories_put_with_http_info(self, id, categories, **kwargs):  # noqa: E501
         """employees_idactionsetcategories_put  # noqa: E501
 
         setcategories Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employees_idactionsetcategories_put_with_http_info(id, id, categories, async_req=True)
+        >>> thread = api.employees_idactionsetcategories_put_with_http_info(id, categories, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

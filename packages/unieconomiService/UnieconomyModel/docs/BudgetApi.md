@@ -352,7 +352,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **budgets_idactionexcelbudget_post**
-> BudgetImport budgets_idactionexcelbudget_post(id, id, fileid, departmentid)
+> BudgetImport budgets_idactionexcelbudget_post(id, fileid, departmentid)
 
 
 
@@ -374,7 +374,7 @@ fileid = swagger_client.Object() # Object |
 departmentid = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.budgets_idactionexcelbudget_post(id, id, fileid, departmentid)
+    api_response = api_instance.budgets_idactionexcelbudget_post(id, fileid, departmentid)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling BudgetApi->budgets_idactionexcelbudget_post: %s\n" % e)

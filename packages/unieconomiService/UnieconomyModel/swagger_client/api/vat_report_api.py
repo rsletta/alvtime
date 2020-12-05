@@ -415,13 +415,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionadjust_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionadjust_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionadjust_post  # noqa: E501
 
         adjust Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionadjust_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionadjust_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionadjust_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionadjust_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionadjust_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionadjust_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionadjust_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionadjust_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionadjust_post  # noqa: E501
 
         adjust Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionadjust_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionadjust_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionapprove_manually_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionapprove_manually_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionapprove_manually_post  # noqa: E501
 
         approveManually Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionapprove_manually_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionapprove_manually_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionapprove_manually_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionapprove_manually_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionapprove_manually_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionapprove_manually_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionapprove_manually_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionapprove_manually_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionapprove_manually_post  # noqa: E501
 
         approveManually Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionapprove_manually_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionapprove_manually_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionapprove_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionapprove_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionapprove_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionapprove_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionapprove_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionapprove_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionapprove_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionapprove_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -724,13 +724,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactioncontrol_vatreport_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactioncontrol_vatreport_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactioncontrol_vatreport_get  # noqa: E501
 
         control-vatreport Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactioncontrol_vatreport_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactioncontrol_vatreport_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -743,18 +743,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactioncontrol_vatreport_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactioncontrol_vatreport_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactioncontrol_vatreport_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactioncontrol_vatreport_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactioncontrol_vatreport_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactioncontrol_vatreport_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactioncontrol_vatreport_get  # noqa: E501
 
         control-vatreport Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactioncontrol_vatreport_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactioncontrol_vatreport_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -835,13 +835,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionexecute_post(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionexecute_post(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionexecute_post  # noqa: E501
 
         execute Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionexecute_post(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionexecute_post(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -854,18 +854,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionexecute_post_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionexecute_post_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionexecute_post_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionexecute_post_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionexecute_post_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionexecute_post_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionexecute_post  # noqa: E501
 
         execute Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionexecute_post_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionexecute_post_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -946,13 +946,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionget_vat_report_summary_from_previous_periods_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_from_previous_periods_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_from_previous_periods_get  # noqa: E501
 
         get-vat-report-summary-from-previous-periods Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -965,18 +965,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_from_previous_periods_get  # noqa: E501
 
         get-vat-report-summary-from-previous-periods Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_from_previous_periods_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1057,13 +1057,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionget_vat_report_summary_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_get  # noqa: E501
 
         get-vat-report-summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1076,18 +1076,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionget_vat_report_summary_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionget_vat_report_summary_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionget_vat_report_summary_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionget_vat_report_summary_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionget_vat_report_summary_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_get  # noqa: E501
 
         get-vat-report-summary Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1168,13 +1168,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionget_vat_report_summary_per_post_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_get  # noqa: E501
 
         get-vat-report-summary-per-post Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1187,18 +1187,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_get  # noqa: E501
 
         get-vat-report-summary-per-post Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1279,13 +1279,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_per_account_details_get  # noqa: E501
 
         get-vat-report-summary-per-post-per-account-details Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1298,18 +1298,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_per_account_details_get  # noqa: E501
 
         get-vat-report-summary-per-post-per-account-details Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1390,13 +1390,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionget_vat_report_summary_per_post_per_account_get(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_per_account_get(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_per_account_get  # noqa: E501
 
         get-vat-report-summary-per-post-per-account Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1409,18 +1409,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, id, period_id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, period_id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(self, id, id, period_id, **kwargs):  # noqa: E501
+    def vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(self, id, period_id, **kwargs):  # noqa: E501
         """vatreports_idactionget_vat_report_summary_per_post_per_account_get  # noqa: E501
 
         get-vat-report-summary-per-post-per-account Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, id, period_id, async_req=True)
+        >>> thread = api.vatreports_idactionget_vat_report_summary_per_post_per_account_get_with_http_info(id, period_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1501,13 +1501,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionnext_get(self, id, id, periodid, **kwargs):  # noqa: E501
+    def vatreports_idactionnext_get(self, id, periodid, **kwargs):  # noqa: E501
         """vatreports_idactionnext_get  # noqa: E501
 
         next Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionnext_get(id, id, periodid, async_req=True)
+        >>> thread = api.vatreports_idactionnext_get(id, periodid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1520,18 +1520,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionnext_get_with_http_info(id, id, periodid, **kwargs)  # noqa: E501
+            return self.vatreports_idactionnext_get_with_http_info(id, periodid, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionnext_get_with_http_info(id, id, periodid, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionnext_get_with_http_info(id, periodid, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionnext_get_with_http_info(self, id, id, periodid, **kwargs):  # noqa: E501
+    def vatreports_idactionnext_get_with_http_info(self, id, periodid, **kwargs):  # noqa: E501
         """vatreports_idactionnext_get  # noqa: E501
 
         next Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionnext_get_with_http_info(id, id, periodid, async_req=True)
+        >>> thread = api.vatreports_idactionnext_get_with_http_info(id, periodid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1715,13 +1715,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionprevious_get(self, id, id, periodid, **kwargs):  # noqa: E501
+    def vatreports_idactionprevious_get(self, id, periodid, **kwargs):  # noqa: E501
         """vatreports_idactionprevious_get  # noqa: E501
 
         previous Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionprevious_get(id, id, periodid, async_req=True)
+        >>> thread = api.vatreports_idactionprevious_get(id, periodid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1734,18 +1734,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionprevious_get_with_http_info(id, id, periodid, **kwargs)  # noqa: E501
+            return self.vatreports_idactionprevious_get_with_http_info(id, periodid, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionprevious_get_with_http_info(id, id, periodid, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionprevious_get_with_http_info(id, periodid, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionprevious_get_with_http_info(self, id, id, periodid, **kwargs):  # noqa: E501
+    def vatreports_idactionprevious_get_with_http_info(self, id, periodid, **kwargs):  # noqa: E501
         """vatreports_idactionprevious_get  # noqa: E501
 
         previous Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionprevious_get_with_http_info(id, id, periodid, async_req=True)
+        >>> thread = api.vatreports_idactionprevious_get_with_http_info(id, periodid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1826,13 +1826,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionreexecute_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionreexecute_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionreexecute_post  # noqa: E501
 
         reexecute Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionreexecute_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionreexecute_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1844,18 +1844,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionreexecute_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionreexecute_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionreexecute_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionreexecute_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionreexecute_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionreexecute_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionreexecute_post  # noqa: E501
 
         reexecute Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionreexecute_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionreexecute_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1929,13 +1929,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionreject_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionreject_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionreject_post  # noqa: E501
 
         reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionreject_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionreject_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1947,18 +1947,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionreject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionreject_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionreject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionreject_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionreject_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionreject_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionreject_post  # noqa: E501
 
         reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionreject_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionreject_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2032,13 +2032,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionset_to_approved_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionset_to_approved_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionset_to_approved_post  # noqa: E501
 
         setToApproved Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionset_to_approved_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionset_to_approved_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2050,18 +2050,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionset_to_approved_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionset_to_approved_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionset_to_approved_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionset_to_approved_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionset_to_approved_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionset_to_approved_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionset_to_approved_post  # noqa: E501
 
         setToApproved Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionset_to_approved_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionset_to_approved_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2135,13 +2135,13 @@ class VatReportApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vatreports_idactionsubmit_post(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionsubmit_post(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionsubmit_post  # noqa: E501
 
         submit Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionsubmit_post(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionsubmit_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2153,18 +2153,18 @@ class VatReportApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vatreports_idactionsubmit_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.vatreports_idactionsubmit_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.vatreports_idactionsubmit_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.vatreports_idactionsubmit_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def vatreports_idactionsubmit_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def vatreports_idactionsubmit_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """vatreports_idactionsubmit_post  # noqa: E501
 
         submit Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vatreports_idactionsubmit_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.vatreports_idactionsubmit_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

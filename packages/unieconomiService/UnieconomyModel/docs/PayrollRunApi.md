@@ -1309,7 +1309,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **payrollrun_idactiontime_to_salary_selection_get**
-> list[WorkItemToSalary] payrollrun_idactiontime_to_salary_selection_get(id, id, to_date)
+> list[WorkItemToSalary] payrollrun_idactiontime_to_salary_selection_get(id, to_date)
 
 
 
@@ -1330,7 +1330,7 @@ id = swagger_client.Object() # Object |
 to_date = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.payrollrun_idactiontime_to_salary_selection_get(id, id, to_date)
+    api_response = api_instance.payrollrun_idactiontime_to_salary_selection_get(id, to_date)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PayrollRunApi->payrollrun_idactiontime_to_salary_selection_get: %s\n" % e)

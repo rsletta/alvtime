@@ -415,13 +415,13 @@ class UserApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def users_idactionactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def users_idactionactivate_post(self, id, **kwargs):  # noqa: E501
         """users_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactionactivate_post(id, id, async_req=True)
+        >>> thread = api.users_idactionactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class UserApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.users_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.users_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.users_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.users_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def users_idactionactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def users_idactionactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """users_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactionactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.users_idactionactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class UserApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def users_idactioninactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def users_idactioninactivate_post(self, id, **kwargs):  # noqa: E501
         """users_idactioninactivate_post  # noqa: E501
 
         inactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactioninactivate_post(id, id, async_req=True)
+        >>> thread = api.users_idactioninactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class UserApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.users_idactioninactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.users_idactioninactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.users_idactioninactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.users_idactioninactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def users_idactioninactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def users_idactioninactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """users_idactioninactivate_post  # noqa: E501
 
         inactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactioninactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.users_idactioninactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -732,13 +732,13 @@ class UserApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def users_idactionreset_autobank_password_post(self, id, id, **kwargs):  # noqa: E501
+    def users_idactionreset_autobank_password_post(self, id, **kwargs):  # noqa: E501
         """users_idactionreset_autobank_password_post  # noqa: E501
 
         reset-autobank-password Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactionreset_autobank_password_post(id, id, async_req=True)
+        >>> thread = api.users_idactionreset_autobank_password_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -750,18 +750,18 @@ class UserApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.users_idactionreset_autobank_password_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.users_idactionreset_autobank_password_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.users_idactionreset_autobank_password_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.users_idactionreset_autobank_password_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def users_idactionreset_autobank_password_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def users_idactionreset_autobank_password_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """users_idactionreset_autobank_password_post  # noqa: E501
 
         reset-autobank-password Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.users_idactionreset_autobank_password_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.users_idactionreset_autobank_password_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

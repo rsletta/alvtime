@@ -370,7 +370,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactioncontrol_vatreport_get**
-> list[VatReportMessage] vatreports_idactioncontrol_vatreport_get(id, id, period_id)
+> list[VatReportMessage] vatreports_idactioncontrol_vatreport_get(id, period_id)
 
 
 
@@ -391,7 +391,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactioncontrol_vatreport_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactioncontrol_vatreport_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactioncontrol_vatreport_get: %s\n" % e)
@@ -421,7 +421,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionexecute_post**
-> VatReport vatreports_idactionexecute_post(id, id, period_id)
+> VatReport vatreports_idactionexecute_post(id, period_id)
 
 
 
@@ -442,7 +442,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionexecute_post(id, id, period_id)
+    api_response = api_instance.vatreports_idactionexecute_post(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionexecute_post: %s\n" % e)
@@ -472,7 +472,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionget_vat_report_summary_from_previous_periods_get**
-> list[VatReportSummary] vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, id, period_id)
+> list[VatReportSummary] vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, period_id)
 
 
 
@@ -493,7 +493,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactionget_vat_report_summary_from_previous_periods_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionget_vat_report_summary_from_previous_periods_get: %s\n" % e)
@@ -523,7 +523,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionget_vat_report_summary_get**
-> list[VatReportSummary] vatreports_idactionget_vat_report_summary_get(id, id, period_id)
+> list[VatReportSummary] vatreports_idactionget_vat_report_summary_get(id, period_id)
 
 
 
@@ -544,7 +544,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionget_vat_report_summary_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactionget_vat_report_summary_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionget_vat_report_summary_get: %s\n" % e)
@@ -574,7 +574,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionget_vat_report_summary_per_post_get**
-> list[VatReportSummaryPerPost] vatreports_idactionget_vat_report_summary_per_post_get(id, id, period_id)
+> list[VatReportSummaryPerPost] vatreports_idactionget_vat_report_summary_per_post_get(id, period_id)
 
 
 
@@ -595,7 +595,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionget_vat_report_summary_per_post_get: %s\n" % e)
@@ -625,7 +625,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionget_vat_report_summary_per_post_per_account_details_get**
-> list[VatReportSummaryPerPostPerAccount] vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, id, period_id)
+> list[VatReportSummaryPerPostPerAccount] vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, period_id)
 
 
 
@@ -646,7 +646,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_per_account_details_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionget_vat_report_summary_per_post_per_account_details_get: %s\n" % e)
@@ -676,7 +676,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionget_vat_report_summary_per_post_per_account_get**
-> list[VatReportSummaryPerPostPerAccount] vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, id, period_id)
+> list[VatReportSummaryPerPostPerAccount] vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, period_id)
 
 
 
@@ -697,7 +697,7 @@ id = swagger_client.Object() # Object |
 period_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, id, period_id)
+    api_response = api_instance.vatreports_idactionget_vat_report_summary_per_post_per_account_get(id, period_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionget_vat_report_summary_per_post_per_account_get: %s\n" % e)
@@ -727,7 +727,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionnext_get**
-> VatReport vatreports_idactionnext_get(id, id, periodid)
+> VatReport vatreports_idactionnext_get(id, periodid)
 
 
 
@@ -748,7 +748,7 @@ id = swagger_client.Object() # Object |
 periodid = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionnext_get(id, id, periodid)
+    api_response = api_instance.vatreports_idactionnext_get(id, periodid)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionnext_get: %s\n" % e)
@@ -827,7 +827,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vatreports_idactionprevious_get**
-> VatReport vatreports_idactionprevious_get(id, id, periodid)
+> VatReport vatreports_idactionprevious_get(id, periodid)
 
 
 
@@ -848,7 +848,7 @@ id = swagger_client.Object() # Object |
 periodid = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.vatreports_idactionprevious_get(id, id, periodid)
+    api_response = api_instance.vatreports_idactionprevious_get(id, periodid)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling VatReportApi->vatreports_idactionprevious_get: %s\n" % e)

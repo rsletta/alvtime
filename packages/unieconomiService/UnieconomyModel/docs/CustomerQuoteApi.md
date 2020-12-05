@@ -497,7 +497,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **quotes_idactionset_customer_quote_printstatus_put**
-> object quotes_idactionset_customer_quote_printstatus_put(id, id, print_status)
+> object quotes_idactionset_customer_quote_printstatus_put(id, print_status)
 
 
 
@@ -518,7 +518,7 @@ id = swagger_client.Object() # Object |
 print_status = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.quotes_idactionset_customer_quote_printstatus_put(id, id, print_status)
+    api_response = api_instance.quotes_idactionset_customer_quote_printstatus_put(id, print_status)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CustomerQuoteApi->quotes_idactionset_customer_quote_printstatus_put: %s\n" % e)

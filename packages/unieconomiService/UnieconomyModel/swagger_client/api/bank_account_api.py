@@ -415,13 +415,13 @@ class BankAccountApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def bankaccounts_idactionbank_balance_get(self, id, id, **kwargs):  # noqa: E501
+    def bankaccounts_idactionbank_balance_get(self, id, **kwargs):  # noqa: E501
         """bankaccounts_idactionbank_balance_get  # noqa: E501
 
         bank-balance Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankaccounts_idactionbank_balance_get(id, id, async_req=True)
+        >>> thread = api.bankaccounts_idactionbank_balance_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class BankAccountApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.bankaccounts_idactionbank_balance_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.bankaccounts_idactionbank_balance_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.bankaccounts_idactionbank_balance_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.bankaccounts_idactionbank_balance_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def bankaccounts_idactionbank_balance_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def bankaccounts_idactionbank_balance_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """bankaccounts_idactionbank_balance_get  # noqa: E501
 
         bank-balance Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.bankaccounts_idactionbank_balance_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.bankaccounts_idactionbank_balance_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

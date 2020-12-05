@@ -415,13 +415,13 @@ class ProductApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def products_idaction_delete_post(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_delete_post(self, id, **kwargs):  # noqa: E501
         """products_idaction_delete_post  # noqa: E501
 
         Delete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_delete_post(id, id, async_req=True)
+        >>> thread = api.products_idaction_delete_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class ProductApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.products_idaction_delete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.products_idaction_delete_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.products_idaction_delete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.products_idaction_delete_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def products_idaction_delete_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_delete_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """products_idaction_delete_post  # noqa: E501
 
         Delete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_delete_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.products_idaction_delete_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class ProductApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def products_idaction_discard_post(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_discard_post(self, id, **kwargs):  # noqa: E501
         """products_idaction_discard_post  # noqa: E501
 
         Discard Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_discard_post(id, id, async_req=True)
+        >>> thread = api.products_idaction_discard_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class ProductApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.products_idaction_discard_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.products_idaction_discard_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.products_idaction_discard_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.products_idaction_discard_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def products_idaction_discard_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_discard_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """products_idaction_discard_post  # noqa: E501
 
         Discard Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_discard_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.products_idaction_discard_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class ProductApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def products_idaction_reactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_reactivate_post(self, id, **kwargs):  # noqa: E501
         """products_idaction_reactivate_post  # noqa: E501
 
         Reactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_reactivate_post(id, id, async_req=True)
+        >>> thread = api.products_idaction_reactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class ProductApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.products_idaction_reactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.products_idaction_reactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.products_idaction_reactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.products_idaction_reactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def products_idaction_reactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def products_idaction_reactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """products_idaction_reactivate_post  # noqa: E501
 
         Reactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.products_idaction_reactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.products_idaction_reactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

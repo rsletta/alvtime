@@ -415,13 +415,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionapprove_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionapprove_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionapprove_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionapprove_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionapprove_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionapprove_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionapprove_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionapprove_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionapprove_post  # noqa: E501
 
         approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionapprove_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionapprove_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionassign_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionassign_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionassign_post  # noqa: E501
 
         assign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionassign_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionassign_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionassign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionassign_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionassign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionassign_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionassign_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionassign_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionassign_post  # noqa: E501
 
         assign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionassign_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionassign_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -732,13 +732,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactioncancel_approvement_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactioncancel_approvement_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactioncancel_approvement_post  # noqa: E501
 
         cancelApprovement Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactioncancel_approvement_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactioncancel_approvement_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -750,18 +750,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactioncancel_approvement_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactioncancel_approvement_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactioncancel_approvement_post  # noqa: E501
 
         cancelApprovement Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactioncancel_approvement_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -835,13 +835,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionfinish_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionfinish_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionfinish_post  # noqa: E501
 
         finish Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionfinish_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionfinish_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -853,18 +853,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionfinish_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionfinish_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionfinish_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionfinish_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionfinish_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionfinish_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionfinish_post  # noqa: E501
 
         finish Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionfinish_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionfinish_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -938,13 +938,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionjournal_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionjournal_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionjournal_post  # noqa: E501
 
         journal Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionjournal_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionjournal_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -956,18 +956,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionjournal_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionjournal_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionjournal_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionjournal_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionjournal_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionjournal_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionjournal_post  # noqa: E501
 
         journal Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionjournal_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionjournal_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1255,13 +1255,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionpay_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionpay_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionpay_post  # noqa: E501
 
         pay Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionpay_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionpay_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1273,18 +1273,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionpay_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionpay_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionpay_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionpay_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionpay_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionpay_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionpay_post  # noqa: E501
 
         pay Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionpay_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionpay_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1358,13 +1358,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionre_assign_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionre_assign_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionre_assign_post  # noqa: E501
 
         reAssign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionre_assign_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionre_assign_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1376,18 +1376,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionre_assign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionre_assign_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionre_assign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionre_assign_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionre_assign_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionre_assign_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionre_assign_post  # noqa: E501
 
         reAssign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionre_assign_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionre_assign_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1572,13 +1572,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionreject_assignment_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_assignment_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_assignment_post  # noqa: E501
 
         rejectAssignment Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_assignment_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_assignment_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1590,18 +1590,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionreject_assignment_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionreject_assignment_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionreject_assignment_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionreject_assignment_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionreject_assignment_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_assignment_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_assignment_post  # noqa: E501
 
         rejectAssignment Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_assignment_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_assignment_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1675,13 +1675,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionreject_invoice_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_invoice_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_invoice_post  # noqa: E501
 
         rejectInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_invoice_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_invoice_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1693,18 +1693,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionreject_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionreject_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionreject_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionreject_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionreject_invoice_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_invoice_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_invoice_post  # noqa: E501
 
         rejectInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_invoice_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_invoice_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1778,13 +1778,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionreject_put(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_put(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_put  # noqa: E501
 
         reject Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_put(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1796,18 +1796,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionreject_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionreject_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionreject_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionreject_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionreject_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionreject_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionreject_put  # noqa: E501
 
         reject Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionreject_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionreject_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1881,13 +1881,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionrestore_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionrestore_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionrestore_post  # noqa: E501
 
         restore Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionrestore_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionrestore_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1899,18 +1899,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionrestore_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionrestore_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionrestore_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionrestore_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionrestore_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionrestore_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionrestore_post  # noqa: E501
 
         restore Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionrestore_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionrestore_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1984,13 +1984,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionrevert_finish_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionrevert_finish_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionrevert_finish_post  # noqa: E501
 
         revertFinish Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionrevert_finish_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionrevert_finish_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2002,18 +2002,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionrevert_finish_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionrevert_finish_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionrevert_finish_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionrevert_finish_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionrevert_finish_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionrevert_finish_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionrevert_finish_post  # noqa: E501
 
         revertFinish Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionrevert_finish_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionrevert_finish_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2087,13 +2087,13 @@ class SupplierInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def supplierinvoices_idactionsend_for_payment_post(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionsend_for_payment_post(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionsend_for_payment_post  # noqa: E501
 
         sendForPayment Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionsend_for_payment_post(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionsend_for_payment_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2105,18 +2105,18 @@ class SupplierInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def supplierinvoices_idactionsend_for_payment_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def supplierinvoices_idactionsend_for_payment_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """supplierinvoices_idactionsend_for_payment_post  # noqa: E501
 
         sendForPayment Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.supplierinvoices_idactionsend_for_payment_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

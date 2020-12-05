@@ -103,7 +103,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **salarysums_idactionyearly_sums_on_payrollrun_get**
-> SalaryTransactionSums salarysums_idactionyearly_sums_on_payrollrun_get(id, id, emp_no, emp_id)
+> SalaryTransactionSums salarysums_idactionyearly_sums_on_payrollrun_get(id, emp_no, emp_id)
 
 
 
@@ -125,7 +125,7 @@ emp_no = swagger_client.Object() # Object |
 emp_id = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.salarysums_idactionyearly_sums_on_payrollrun_get(id, id, emp_no, emp_id)
+    api_response = api_instance.salarysums_idactionyearly_sums_on_payrollrun_get(id, emp_no, emp_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SalaryTransactionSumsApi->salarysums_idactionyearly_sums_on_payrollrun_get: %s\n" % e)

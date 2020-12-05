@@ -871,7 +871,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invoices_idactionset_customer_invoice_printstatus_put**
-> object invoices_idactionset_customer_invoice_printstatus_put(id, id, print_status)
+> object invoices_idactionset_customer_invoice_printstatus_put(id, print_status)
 
 
 
@@ -892,7 +892,7 @@ id = swagger_client.Object() # Object |
 print_status = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.invoices_idactionset_customer_invoice_printstatus_put(id, id, print_status)
+    api_response = api_instance.invoices_idactionset_customer_invoice_printstatus_put(id, print_status)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CustomerInvoiceApi->invoices_idactionset_customer_invoice_printstatus_put: %s\n" % e)

@@ -415,13 +415,13 @@ class EmployeeCategoryApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def employeecategories_idactionemployeesoncategory_get(self, id, id, **kwargs):  # noqa: E501
+    def employeecategories_idactionemployeesoncategory_get(self, id, **kwargs):  # noqa: E501
         """employeecategories_idactionemployeesoncategory_get  # noqa: E501
 
         employeesoncategory Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employeecategories_idactionemployeesoncategory_get(id, id, async_req=True)
+        >>> thread = api.employeecategories_idactionemployeesoncategory_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class EmployeeCategoryApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.employeecategories_idactionemployeesoncategory_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.employeecategories_idactionemployeesoncategory_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.employeecategories_idactionemployeesoncategory_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.employeecategories_idactionemployeesoncategory_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def employeecategories_idactionemployeesoncategory_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def employeecategories_idactionemployeesoncategory_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """employeecategories_idactionemployeesoncategory_get  # noqa: E501
 
         employeesoncategory Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employeecategories_idactionemployeesoncategory_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.employeecategories_idactionemployeesoncategory_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class EmployeeCategoryApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def employeecategories_idactionpayrollrunsoncategory_get(self, id, id, **kwargs):  # noqa: E501
+    def employeecategories_idactionpayrollrunsoncategory_get(self, id, **kwargs):  # noqa: E501
         """employeecategories_idactionpayrollrunsoncategory_get  # noqa: E501
 
         payrollrunsoncategory Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employeecategories_idactionpayrollrunsoncategory_get(id, id, async_req=True)
+        >>> thread = api.employeecategories_idactionpayrollrunsoncategory_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class EmployeeCategoryApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def employeecategories_idactionpayrollrunsoncategory_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def employeecategories_idactionpayrollrunsoncategory_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """employeecategories_idactionpayrollrunsoncategory_get  # noqa: E501
 
         payrollrunsoncategory Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.employeecategories_idactionpayrollrunsoncategory_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

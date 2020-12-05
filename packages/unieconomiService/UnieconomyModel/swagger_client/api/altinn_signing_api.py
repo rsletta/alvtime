@@ -415,13 +415,13 @@ class AltinnSigningApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def altinnsigning_idactionsign_post(self, id, id, **kwargs):  # noqa: E501
+    def altinnsigning_idactionsign_post(self, id, **kwargs):  # noqa: E501
         """altinnsigning_idactionsign_post  # noqa: E501
 
         sign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.altinnsigning_idactionsign_post(id, id, async_req=True)
+        >>> thread = api.altinnsigning_idactionsign_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class AltinnSigningApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.altinnsigning_idactionsign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.altinnsigning_idactionsign_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.altinnsigning_idactionsign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.altinnsigning_idactionsign_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def altinnsigning_idactionsign_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def altinnsigning_idactionsign_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """altinnsigning_idactionsign_post  # noqa: E501
 
         sign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.altinnsigning_idactionsign_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.altinnsigning_idactionsign_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

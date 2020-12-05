@@ -320,13 +320,13 @@ class JournalEntryLineApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def journalentrylines_idactionmark_post(self, id, id, **kwargs):  # noqa: E501
+    def journalentrylines_idactionmark_post(self, id, **kwargs):  # noqa: E501
         """journalentrylines_idactionmark_post  # noqa: E501
 
         mark Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.journalentrylines_idactionmark_post(id, id, async_req=True)
+        >>> thread = api.journalentrylines_idactionmark_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -338,18 +338,18 @@ class JournalEntryLineApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.journalentrylines_idactionmark_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.journalentrylines_idactionmark_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.journalentrylines_idactionmark_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.journalentrylines_idactionmark_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def journalentrylines_idactionmark_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def journalentrylines_idactionmark_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """journalentrylines_idactionmark_post  # noqa: E501
 
         mark Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.journalentrylines_idactionmark_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.journalentrylines_idactionmark_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

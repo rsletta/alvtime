@@ -415,13 +415,13 @@ class PaymentBatchApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def paymentbatches_idactioncomplete_customer_paymentbatch_post(self, id, id, **kwargs):  # noqa: E501
+    def paymentbatches_idactioncomplete_customer_paymentbatch_post(self, id, **kwargs):  # noqa: E501
         """paymentbatches_idactioncomplete_customer_paymentbatch_post  # noqa: E501
 
         complete-customer-paymentbatch Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.paymentbatches_idactioncomplete_customer_paymentbatch_post(id, id, async_req=True)
+        >>> thread = api.paymentbatches_idactioncomplete_customer_paymentbatch_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class PaymentBatchApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """paymentbatches_idactioncomplete_customer_paymentbatch_post  # noqa: E501
 
         complete-customer-paymentbatch Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.paymentbatches_idactioncomplete_customer_paymentbatch_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

@@ -9,7 +9,7 @@ info:
     url: ""
   version: "1.0"
 servers:
-- url: http://test-api.softrig.com/api/biz
+- url: https://test-api.softrig.com/api/biz
 paths:
   /workers?action=create-worker-from-user:
     post:

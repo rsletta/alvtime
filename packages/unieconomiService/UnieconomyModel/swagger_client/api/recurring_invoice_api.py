@@ -415,13 +415,13 @@ class RecurringInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def recurringinvoices_idactionactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactionactivate_post(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactionactivate_post(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactionactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class RecurringInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.recurringinvoices_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.recurringinvoices_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.recurringinvoices_idactionactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.recurringinvoices_idactionactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def recurringinvoices_idactionactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactionactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactionactivate_post  # noqa: E501
 
         activate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactionactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactionactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class RecurringInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def recurringinvoices_idactiondeactivate_post(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactiondeactivate_post(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactiondeactivate_post  # noqa: E501
 
         deactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactiondeactivate_post(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactiondeactivate_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class RecurringInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.recurringinvoices_idactiondeactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.recurringinvoices_idactiondeactivate_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.recurringinvoices_idactiondeactivate_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.recurringinvoices_idactiondeactivate_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def recurringinvoices_idactiondeactivate_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactiondeactivate_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactiondeactivate_post  # noqa: E501
 
         deactivate Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactiondeactivate_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactiondeactivate_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class RecurringInvoiceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def recurringinvoices_idactionexecute_post(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactionexecute_post(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactionexecute_post  # noqa: E501
 
         execute Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactionexecute_post(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactionexecute_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class RecurringInvoiceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.recurringinvoices_idactionexecute_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.recurringinvoices_idactionexecute_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.recurringinvoices_idactionexecute_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.recurringinvoices_idactionexecute_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def recurringinvoices_idactionexecute_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def recurringinvoices_idactionexecute_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """recurringinvoices_idactionexecute_post  # noqa: E501
 
         execute Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.recurringinvoices_idactionexecute_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.recurringinvoices_idactionexecute_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

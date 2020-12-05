@@ -510,13 +510,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactioncomplete_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactioncomplete_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactioncomplete_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactioncomplete_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -528,18 +528,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactioncomplete_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactioncomplete_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactioncomplete_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactioncomplete_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactioncomplete_post  # noqa: E501
 
         complete Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactioncomplete_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactioncomplete_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -613,13 +613,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactioncustomer_accept_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactioncustomer_accept_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactioncustomer_accept_post  # noqa: E501
 
         customerAccept Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactioncustomer_accept_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactioncustomer_accept_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -631,18 +631,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactioncustomer_accept_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactioncustomer_accept_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactioncustomer_accept_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactioncustomer_accept_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactioncustomer_accept_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactioncustomer_accept_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactioncustomer_accept_post  # noqa: E501
 
         customerAccept Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactioncustomer_accept_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactioncustomer_accept_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -906,13 +906,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactionregister_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionregister_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactionregister_post  # noqa: E501
 
         register Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionregister_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactionregister_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -924,18 +924,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactionregister_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactionregister_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactionregister_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactionregister_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactionregister_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionregister_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactionregister_post  # noqa: E501
 
         register Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionregister_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactionregister_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1009,13 +1009,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactionset_customer_quote_printstatus_put(self, id, id, print_status, **kwargs):  # noqa: E501
+    def quotes_idactionset_customer_quote_printstatus_put(self, id, print_status, **kwargs):  # noqa: E501
         """quotes_idactionset_customer_quote_printstatus_put  # noqa: E501
 
         set-customer-quote-printstatus Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionset_customer_quote_printstatus_put(id, id, print_status, async_req=True)
+        >>> thread = api.quotes_idactionset_customer_quote_printstatus_put(id, print_status, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1028,18 +1028,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, id, print_status, **kwargs)  # noqa: E501
+            return self.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, print_status, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, id, print_status, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, print_status, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactionset_customer_quote_printstatus_put_with_http_info(self, id, id, print_status, **kwargs):  # noqa: E501
+    def quotes_idactionset_customer_quote_printstatus_put_with_http_info(self, id, print_status, **kwargs):  # noqa: E501
         """quotes_idactionset_customer_quote_printstatus_put  # noqa: E501
 
         set-customer-quote-printstatus Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, id, print_status, async_req=True)
+        >>> thread = api.quotes_idactionset_customer_quote_printstatus_put_with_http_info(id, print_status, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1120,13 +1120,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactionship_to_customer_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionship_to_customer_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactionship_to_customer_post  # noqa: E501
 
         shipToCustomer Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionship_to_customer_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactionship_to_customer_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1138,18 +1138,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactionship_to_customer_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactionship_to_customer_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactionship_to_customer_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactionship_to_customer_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactionship_to_customer_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionship_to_customer_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactionship_to_customer_post  # noqa: E501
 
         shipToCustomer Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionship_to_customer_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactionship_to_customer_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1223,13 +1223,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactionto_invoice_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionto_invoice_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactionto_invoice_post  # noqa: E501
 
         toInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionto_invoice_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactionto_invoice_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1241,18 +1241,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactionto_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactionto_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactionto_invoice_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactionto_invoice_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactionto_invoice_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionto_invoice_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactionto_invoice_post  # noqa: E501
 
         toInvoice Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionto_invoice_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactionto_invoice_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1326,13 +1326,13 @@ class CustomerQuoteApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def quotes_idactionto_order_post(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionto_order_post(self, id, **kwargs):  # noqa: E501
         """quotes_idactionto_order_post  # noqa: E501
 
         toOrder Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionto_order_post(id, id, async_req=True)
+        >>> thread = api.quotes_idactionto_order_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1344,18 +1344,18 @@ class CustomerQuoteApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.quotes_idactionto_order_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.quotes_idactionto_order_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.quotes_idactionto_order_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.quotes_idactionto_order_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def quotes_idactionto_order_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def quotes_idactionto_order_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """quotes_idactionto_order_post  # noqa: E501
 
         toOrder Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.quotes_idactionto_order_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.quotes_idactionto_order_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

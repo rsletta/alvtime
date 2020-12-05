@@ -415,13 +415,13 @@ class WorkItemGroupApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def workitemgroups_idaction_approve_post(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_approve_post(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_approve_post  # noqa: E501
 
         Approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_approve_post(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_approve_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class WorkItemGroupApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.workitemgroups_idaction_approve_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.workitemgroups_idaction_approve_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.workitemgroups_idaction_approve_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.workitemgroups_idaction_approve_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def workitemgroups_idaction_approve_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_approve_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_approve_post  # noqa: E501
 
         Approve Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_approve_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_approve_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class WorkItemGroupApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def workitemgroups_idaction_assign_post(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_assign_post(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_assign_post  # noqa: E501
 
         Assign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_assign_post(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_assign_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class WorkItemGroupApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.workitemgroups_idaction_assign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.workitemgroups_idaction_assign_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.workitemgroups_idaction_assign_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.workitemgroups_idaction_assign_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def workitemgroups_idaction_assign_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_assign_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_assign_post  # noqa: E501
 
         Assign Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_assign_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_assign_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -732,13 +732,13 @@ class WorkItemGroupApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def workitemgroups_idaction_reject_post(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_reject_post(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_reject_post  # noqa: E501
 
         Reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_reject_post(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_reject_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -750,18 +750,18 @@ class WorkItemGroupApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.workitemgroups_idaction_reject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.workitemgroups_idaction_reject_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.workitemgroups_idaction_reject_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.workitemgroups_idaction_reject_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def workitemgroups_idaction_reject_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def workitemgroups_idaction_reject_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """workitemgroups_idaction_reject_post  # noqa: E501
 
         Reject Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workitemgroups_idaction_reject_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.workitemgroups_idaction_reject_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

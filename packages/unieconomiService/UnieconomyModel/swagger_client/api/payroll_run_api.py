@@ -637,13 +637,13 @@ class PayrollRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payrollrun_idactioncalculatejob_put(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactioncalculatejob_put(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactioncalculatejob_put  # noqa: E501
 
         calculatejob Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactioncalculatejob_put(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactioncalculatejob_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -655,18 +655,18 @@ class PayrollRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payrollrun_idactioncalculatejob_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payrollrun_idactioncalculatejob_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payrollrun_idactioncalculatejob_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payrollrun_idactioncalculatejob_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payrollrun_idactioncalculatejob_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactioncalculatejob_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactioncalculatejob_put  # noqa: E501
 
         calculatejob Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactioncalculatejob_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactioncalculatejob_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1049,13 +1049,13 @@ class PayrollRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payrollrun_idactionemployeesonrun_get(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactionemployeesonrun_get(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactionemployeesonrun_get  # noqa: E501
 
         employeesonrun Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactionemployeesonrun_get(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactionemployeesonrun_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1067,18 +1067,18 @@ class PayrollRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payrollrun_idactionemployeesonrun_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payrollrun_idactionemployeesonrun_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payrollrun_idactionemployeesonrun_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payrollrun_idactionemployeesonrun_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payrollrun_idactionemployeesonrun_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactionemployeesonrun_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactionemployeesonrun_get  # noqa: E501
 
         employeesonrun Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactionemployeesonrun_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactionemployeesonrun_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1556,13 +1556,13 @@ class PayrollRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payrollrun_idactionpayments_on_runs_get(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactionpayments_on_runs_get(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactionpayments_on_runs_get  # noqa: E501
 
         payments-on-runs Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactionpayments_on_runs_get(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactionpayments_on_runs_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1574,18 +1574,18 @@ class PayrollRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payrollrun_idactionpayments_on_runs_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.payrollrun_idactionpayments_on_runs_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.payrollrun_idactionpayments_on_runs_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.payrollrun_idactionpayments_on_runs_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def payrollrun_idactionpayments_on_runs_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def payrollrun_idactionpayments_on_runs_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """payrollrun_idactionpayments_on_runs_get  # noqa: E501
 
         payments-on-runs Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactionpayments_on_runs_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.payrollrun_idactionpayments_on_runs_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2689,13 +2689,13 @@ class PayrollRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def payrollrun_idactiontime_to_salary_selection_get(self, id, id, to_date, **kwargs):  # noqa: E501
+    def payrollrun_idactiontime_to_salary_selection_get(self, id, to_date, **kwargs):  # noqa: E501
         """payrollrun_idactiontime_to_salary_selection_get  # noqa: E501
 
         time-to-salary-selection Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactiontime_to_salary_selection_get(id, id, to_date, async_req=True)
+        >>> thread = api.payrollrun_idactiontime_to_salary_selection_get(id, to_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2708,18 +2708,18 @@ class PayrollRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, id, to_date, **kwargs)  # noqa: E501
+            return self.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, to_date, **kwargs)  # noqa: E501
         else:
-            (data) = self.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, id, to_date, **kwargs)  # noqa: E501
+            (data) = self.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, to_date, **kwargs)  # noqa: E501
             return data
 
-    def payrollrun_idactiontime_to_salary_selection_get_with_http_info(self, id, id, to_date, **kwargs):  # noqa: E501
+    def payrollrun_idactiontime_to_salary_selection_get_with_http_info(self, id, to_date, **kwargs):  # noqa: E501
         """payrollrun_idactiontime_to_salary_selection_get  # noqa: E501
 
         time-to-salary-selection Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, id, to_date, async_req=True)
+        >>> thread = api.payrollrun_idactiontime_to_salary_selection_get_with_http_info(id, to_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

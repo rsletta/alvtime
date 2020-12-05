@@ -298,7 +298,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **employees_idactionsetcategories_put**
-> object employees_idactionsetcategories_put(id, id, categories)
+> object employees_idactionsetcategories_put(id, categories)
 
 
 
@@ -319,7 +319,7 @@ id = swagger_client.Object() # Object |
 categories = swagger_client.Object() # Object | 
 
 try:
-    api_response = api_instance.employees_idactionsetcategories_put(id, id, categories)
+    api_response = api_instance.employees_idactionsetcategories_put(id, categories)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EmployeeApi->employees_idactionsetcategories_put: %s\n" % e)

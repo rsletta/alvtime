@@ -213,13 +213,13 @@ class SalaryTransactionSumsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def salarysums_idactionyearly_sums_on_payrollrun_get(self, id, id, emp_no, emp_id, **kwargs):  # noqa: E501
+    def salarysums_idactionyearly_sums_on_payrollrun_get(self, id, emp_no, emp_id, **kwargs):  # noqa: E501
         """salarysums_idactionyearly_sums_on_payrollrun_get  # noqa: E501
 
         yearly-sums-on-payrollrun Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.salarysums_idactionyearly_sums_on_payrollrun_get(id, id, emp_no, emp_id, async_req=True)
+        >>> thread = api.salarysums_idactionyearly_sums_on_payrollrun_get(id, emp_no, emp_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -233,18 +233,18 @@ class SalaryTransactionSumsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, id, emp_no, emp_id, **kwargs)  # noqa: E501
+            return self.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, emp_no, emp_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, id, emp_no, emp_id, **kwargs)  # noqa: E501
+            (data) = self.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, emp_no, emp_id, **kwargs)  # noqa: E501
             return data
 
-    def salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(self, id, id, emp_no, emp_id, **kwargs):  # noqa: E501
+    def salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(self, id, emp_no, emp_id, **kwargs):  # noqa: E501
         """salarysums_idactionyearly_sums_on_payrollrun_get  # noqa: E501
 
         yearly-sums-on-payrollrun Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, id, emp_no, emp_id, async_req=True)
+        >>> thread = api.salarysums_idactionyearly_sums_on_payrollrun_get_with_http_info(id, emp_no, emp_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

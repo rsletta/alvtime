@@ -49,7 +49,7 @@ class CustomerApi(object):
         if kwargs.get('async_req'):
             return self.customers_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.customers_get_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.customers_get_with_http_info( **kwargs)  # noqa: E501
             return data
 
     def customers_get_with_http_info(self, **kwargs):  # noqa: E501

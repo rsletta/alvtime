@@ -415,13 +415,13 @@ class ContractApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def contracts_idactioncompile_put(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactioncompile_put(self, id, **kwargs):  # noqa: E501
         """contracts_idactioncompile_put  # noqa: E501
 
         compile Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactioncompile_put(id, id, async_req=True)
+        >>> thread = api.contracts_idactioncompile_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class ContractApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.contracts_idactioncompile_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.contracts_idactioncompile_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.contracts_idactioncompile_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.contracts_idactioncompile_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def contracts_idactioncompile_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactioncompile_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """contracts_idactioncompile_put  # noqa: E501
 
         compile Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactioncompile_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.contracts_idactioncompile_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class ContractApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def contracts_idactioncopy_based_on_put(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactioncopy_based_on_put(self, id, **kwargs):  # noqa: E501
         """contracts_idactioncopy_based_on_put  # noqa: E501
 
         copy-based-on Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactioncopy_based_on_put(id, id, async_req=True)
+        >>> thread = api.contracts_idactioncopy_based_on_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class ContractApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.contracts_idactioncopy_based_on_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.contracts_idactioncopy_based_on_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.contracts_idactioncopy_based_on_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.contracts_idactioncopy_based_on_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def contracts_idactioncopy_based_on_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactioncopy_based_on_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """contracts_idactioncopy_based_on_put  # noqa: E501
 
         copy-based-on Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactioncopy_based_on_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.contracts_idactioncopy_based_on_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -621,13 +621,13 @@ class ContractApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def contracts_idactiondeploy_post(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactiondeploy_post(self, id, **kwargs):  # noqa: E501
         """contracts_idactiondeploy_post  # noqa: E501
 
         deploy Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactiondeploy_post(id, id, async_req=True)
+        >>> thread = api.contracts_idactiondeploy_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -639,18 +639,18 @@ class ContractApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.contracts_idactiondeploy_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.contracts_idactiondeploy_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.contracts_idactiondeploy_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.contracts_idactiondeploy_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def contracts_idactiondeploy_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactiondeploy_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """contracts_idactiondeploy_post  # noqa: E501
 
         deploy Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactiondeploy_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.contracts_idactiondeploy_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -724,13 +724,13 @@ class ContractApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def contracts_idactionkill_post(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactionkill_post(self, id, **kwargs):  # noqa: E501
         """contracts_idactionkill_post  # noqa: E501
 
         kill Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactionkill_post(id, id, async_req=True)
+        >>> thread = api.contracts_idactionkill_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -742,18 +742,18 @@ class ContractApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.contracts_idactionkill_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.contracts_idactionkill_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.contracts_idactionkill_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.contracts_idactionkill_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def contracts_idactionkill_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactionkill_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """contracts_idactionkill_post  # noqa: E501
 
         kill Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactionkill_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.contracts_idactionkill_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -827,13 +827,13 @@ class ContractApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def contracts_idactionreset_post(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactionreset_post(self, id, **kwargs):  # noqa: E501
         """contracts_idactionreset_post  # noqa: E501
 
         reset Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactionreset_post(id, id, async_req=True)
+        >>> thread = api.contracts_idactionreset_post(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -845,18 +845,18 @@ class ContractApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.contracts_idactionreset_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.contracts_idactionreset_post_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.contracts_idactionreset_post_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.contracts_idactionreset_post_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def contracts_idactionreset_post_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def contracts_idactionreset_post_with_http_info(self, id, **kwargs):  # noqa: E501
         """contracts_idactionreset_post  # noqa: E501
 
         reset Transition  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.contracts_idactionreset_post_with_http_info(id, id, async_req=True)
+        >>> thread = api.contracts_idactionreset_post_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

@@ -415,13 +415,13 @@ class WageTypeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def wagetypes_idactionsync_supplements_put(self, id, id, **kwargs):  # noqa: E501
+    def wagetypes_idactionsync_supplements_put(self, id, **kwargs):  # noqa: E501
         """wagetypes_idactionsync_supplements_put  # noqa: E501
 
         sync-supplements Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.wagetypes_idactionsync_supplements_put(id, id, async_req=True)
+        >>> thread = api.wagetypes_idactionsync_supplements_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class WageTypeApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.wagetypes_idactionsync_supplements_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.wagetypes_idactionsync_supplements_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.wagetypes_idactionsync_supplements_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.wagetypes_idactionsync_supplements_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def wagetypes_idactionsync_supplements_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def wagetypes_idactionsync_supplements_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """wagetypes_idactionsync_supplements_put  # noqa: E501
 
         sync-supplements Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.wagetypes_idactionsync_supplements_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.wagetypes_idactionsync_supplements_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

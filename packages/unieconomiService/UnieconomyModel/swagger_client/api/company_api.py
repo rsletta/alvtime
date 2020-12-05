@@ -918,13 +918,13 @@ class CompanyApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def companies_idactiondelete_company_delete(self, id, id, **kwargs):  # noqa: E501
+    def companies_idactiondelete_company_delete(self, id, **kwargs):  # noqa: E501
         """companies_idactiondelete_company_delete  # noqa: E501
 
         delete-company Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.companies_idactiondelete_company_delete(id, id, async_req=True)
+        >>> thread = api.companies_idactiondelete_company_delete(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -936,18 +936,18 @@ class CompanyApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.companies_idactiondelete_company_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.companies_idactiondelete_company_delete_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.companies_idactiondelete_company_delete_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.companies_idactiondelete_company_delete_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def companies_idactiondelete_company_delete_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def companies_idactiondelete_company_delete_with_http_info(self, id, **kwargs):  # noqa: E501
         """companies_idactiondelete_company_delete  # noqa: E501
 
         delete-company Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.companies_idactiondelete_company_delete_with_http_info(id, id, async_req=True)
+        >>> thread = api.companies_idactiondelete_company_delete_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1306,13 +1306,13 @@ class CompanyApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def companies_idactionundelete_company_put(self, id, id, **kwargs):  # noqa: E501
+    def companies_idactionundelete_company_put(self, id, **kwargs):  # noqa: E501
         """companies_idactionundelete_company_put  # noqa: E501
 
         undelete-company Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.companies_idactionundelete_company_put(id, id, async_req=True)
+        >>> thread = api.companies_idactionundelete_company_put(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1324,18 +1324,18 @@ class CompanyApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.companies_idactionundelete_company_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.companies_idactionundelete_company_put_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.companies_idactionundelete_company_put_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.companies_idactionundelete_company_put_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def companies_idactionundelete_company_put_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def companies_idactionundelete_company_put_with_http_info(self, id, **kwargs):  # noqa: E501
         """companies_idactionundelete_company_put  # noqa: E501
 
         undelete-company Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.companies_idactionundelete_company_put_with_http_info(id, id, async_req=True)
+        >>> thread = api.companies_idactionundelete_company_put_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool

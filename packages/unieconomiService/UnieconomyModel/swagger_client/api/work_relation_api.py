@@ -415,13 +415,13 @@ class WorkRelationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def workrelations_idactioncalc_flex_balance_get(self, id, id, **kwargs):  # noqa: E501
+    def workrelations_idactioncalc_flex_balance_get(self, id, **kwargs):  # noqa: E501
         """workrelations_idactioncalc_flex_balance_get  # noqa: E501
 
         calc-flex-balance Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workrelations_idactioncalc_flex_balance_get(id, id, async_req=True)
+        >>> thread = api.workrelations_idactioncalc_flex_balance_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -433,18 +433,18 @@ class WorkRelationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.workrelations_idactioncalc_flex_balance_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.workrelations_idactioncalc_flex_balance_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.workrelations_idactioncalc_flex_balance_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.workrelations_idactioncalc_flex_balance_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def workrelations_idactioncalc_flex_balance_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def workrelations_idactioncalc_flex_balance_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """workrelations_idactioncalc_flex_balance_get  # noqa: E501
 
         calc-flex-balance Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workrelations_idactioncalc_flex_balance_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.workrelations_idactioncalc_flex_balance_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,13 +518,13 @@ class WorkRelationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def workrelations_idactiontimesheet_get(self, id, id, **kwargs):  # noqa: E501
+    def workrelations_idactiontimesheet_get(self, id, **kwargs):  # noqa: E501
         """workrelations_idactiontimesheet_get  # noqa: E501
 
         timesheet Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workrelations_idactiontimesheet_get(id, id, async_req=True)
+        >>> thread = api.workrelations_idactiontimesheet_get(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -536,18 +536,18 @@ class WorkRelationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.workrelations_idactiontimesheet_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            return self.workrelations_idactiontimesheet_get_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.workrelations_idactiontimesheet_get_with_http_info(id, id, **kwargs)  # noqa: E501
+            (data) = self.workrelations_idactiontimesheet_get_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def workrelations_idactiontimesheet_get_with_http_info(self, id, id, **kwargs):  # noqa: E501
+    def workrelations_idactiontimesheet_get_with_http_info(self, id, **kwargs):  # noqa: E501
         """workrelations_idactiontimesheet_get  # noqa: E501
 
         timesheet Action  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.workrelations_idactiontimesheet_get_with_http_info(id, id, async_req=True)
+        >>> thread = api.workrelations_idactiontimesheet_get_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
