@@ -194,10 +194,6 @@ class ApiConnection:
         return json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True)
 
 
-
-
-
-
 if __name__ == '__main__':
 
     client_id = "3a726a33-0f53-44a7-8415-a44dff248d77"
