@@ -18,6 +18,8 @@ class ApiConnection:
 
         self.create_jwt_token(self.read_certificate(os.getenv("certPath"), str.encode(os.getenv("password"))))
         self.get_access_token()
+        self.api_get_company_info()
+        self.create_api_client()
 
     # Reads the certificate which must be in p12-format, and sets the private key of the certificate.
     # The private key of the sertificate is used to sign the jwt token, which will prove we have the
@@ -110,6 +112,12 @@ class ApiConnection:
                 raise Exception("Problemer med å koble til API, har du riktig access token?")
         except Exception as err:
             print(err)
+
+    def create_api_client(self):
+        headers = {"Authorization": "Bearer " + self.access_token, "CompanyKey": self.company_key}
+        self.apiClient = ApiClient()
+        for headerName in headers.keys():
+            self.apiClient.set_default_header(headerName, headers[headerName])
 
     # Method used to perform GET requests to the API.
     #
@@ -204,7 +212,6 @@ class ApiConnection:
     # - conn.change_customer_info(res["ID"], {"ID":res["ID"], "AvtaleGiro": "true"})
     # - print(conn.get_customers())
     # - conn.delete_customer(str(res["ID"]))
-
     def create_customer(self, company_name, *args):
         data = {"Info": {"Name":company_name},"OrgNumber":args[0]}
 
@@ -216,21 +223,32 @@ class ApiConnection:
     def get_customers(self):
         return json.dumps(conn.api_get_request(r"biz/customers"),indent=4, sort_keys=True)
 
-    def get_customersNew(self):
-        headers = {"Authorization": "Bearer " + self.access_token, "CompanyKey": self.company_key}
-        apiClient = ApiClient(MyHeader=headers)
-        customerApi = CustomerApi(apiClient)
-        stuff = customerApi.customers_get()
-        stuff2 = customerApi.customers_id_get(38)  #type: Customer
-        BR = BusinessRelationApi(apiClient).business_relations_id_get(stuff2.business_relation_id)
-
-        # stuff = apiClient.call_api(r"/customers", "GET")
-        respons = conn.api_get_request(r"biz/customers")
-        return json.dumps(respons,indent=4, sort_keys=True)
-
     def change_customer_info(self, id, data):
         self.api_put_request(r"biz/customers/"+str(id), data)
 
+    def create_customer_new(self, company_name, *id):
+        data = {"Info": {"Name": company_name}, "OrgNumber": id[0]}
+        customerApi = CustomerApi(self.apiClient)
+        res = customerApi.customers_post(data)
+        return res
+
+    def get_customers_new(self,*args):
+        customerApi = CustomerApi(self.apiClient)
+        if not args:
+            return customerApi.customers_get()
+        else:
+            customer = customerApi.customers_id_get(args[0])  #type: Customer
+            cust_br = BusinessRelationApi(self.apiClient).business_relations_id_get(customer.business_relation_id)
+            return customer, cust_br
+
+    def delete_customer_new(self, customer_id):
+        customerApi = CustomerApi(self.apiClient)
+        result = customerApi.customers_id_delete(customer_id)
+
+    def update_customer_new(self, customer_id, data):
+        customerApi = CustomerApi(self.apiClient)
+        res = customerApi.customers_id_put(data, customer_id)
+        return res
 
 if __name__ == '__main__':
 
@@ -241,6 +259,14 @@ if __name__ == '__main__':
     conn = ApiConnection(client_id, audience, api_base_url)
 
     #print(conn.access_token)
-    conn.api_get_company_info()
-    stuff = conn.get_customers()
-    conn.get_customersNew()
+    customers = conn.get_customers_new()
+    new_customer = conn.create_customer_new("Anders ny-testing", 1256363516)
+    print(new_customer.org_number)
+    print(new_customer.avtale_giro)
+    new_customer.avtale_giro = True
+    chg = conn.update_customer_new(new_customer.id, new_customer)
+    updated_customer,br = conn.get_customers_new(new_customer.id)
+    print(updated_customer.org_number)
+    print(br.name)
+    print(updated_customer.avtale_giro)
+    rem = conn.delete_customer_new(new_customer.id)

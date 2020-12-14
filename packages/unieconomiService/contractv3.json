@@ -1,14 +1,13 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "",
+    "title": "UniEconomy API",
     "contact": {
-      "name": "",
-      "url": ""
+      "name": "Not relevant",
+      "url": "http://nonexisting.notgonnahappen"
     },
     "license": {
-      "name": "",
-      "url": ""
+      "name": "MIT"
     },
     "version": "1.0"
   },
