@@ -265,6 +265,7 @@ if __name__ == '__main__':
     print(new_customer.avtale_giro)
     new_customer.avtale_giro = True
     chg = conn.update_customer_new(new_customer.id, new_customer)
+    # NB!: Må sende in kunde-objekt med oppdaterte verdier, ikke bare en dictionary med de verdiene du ønsker å endre
     updated_customer,br = conn.get_customers_new(new_customer.id)
     print(updated_customer.org_number)
     print(br.name)
