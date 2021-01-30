@@ -32,12 +32,11 @@ jobs:
 
       - uses: anchore/scan-action@v2
         with:
-          image-reference: $IMAGE_NAME:latest
-          dockerfile-path: "./packages/frontend/Dockerfile"
+          image: $IMAGE_NAME:latest
+          path: "./packages/frontend/Dockerfile"
           fail-build: true
-          include-app-packages: true
 
-      - name: Anchore inline scan JSON results
+      - name: grype scan JSON results
         run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
 
       - name: Log into registry
