@@ -5,9 +5,6 @@ on:
     branches:
       - releases/*
 
-env:
-  IMAGE_NAME: alvnoas/alvtime-slack-app-prod
-
 jobs:
   push_to_docker_hub:
     runs-on: ubuntu-latest
@@ -16,11 +13,11 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build ./packages/slack-app --tag $IMAGE_NAME:latest
+        run: docker build ./packages/slack-app --tag alvnoas/alvtime-slack-app-prod:latest
 
       - uses: anchore/scan-action@v2
         with:
-          image: $IMAGE_NAME:latest
+          image: alvnoas/alvtime-slack-app-prod:latest
           fail-build: true
 
       - name: grype scan JSON results
@@ -30,4 +27,4 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Push image
-        run: docker push $IMAGE_NAME:latest
+        run: docker push alvnoas/alvtime-slack-app-prod:latest

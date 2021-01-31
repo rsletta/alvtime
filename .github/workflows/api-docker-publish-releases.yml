@@ -19,11 +19,11 @@ jobs:
       - name: Build api image
         working-directory: "./packages/api"
         run: |
-          docker build . --file Dockerfile --tag api-image \
+          docker build . --file Dockerfile --tag image \
 
       - uses: anchore/scan-action@v2
         with:
-          image: $IMAGE_NAME:latest
+          image: image:latest
           fail-build: true
 
       - name: grype scan JSON results
@@ -39,5 +39,5 @@ jobs:
 
           echo IMAGE_NAME=$IMAGE_NAME_API
 
-          docker tag api-image $IMAGE_NAME_API:latest
+          docker tag image $IMAGE_NAME_API:latest
           docker push $IMAGE_NAME_API:latest
