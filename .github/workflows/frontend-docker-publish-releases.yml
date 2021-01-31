@@ -33,7 +33,6 @@ jobs:
       - uses: anchore/scan-action@v2
         with:
           image: $IMAGE_NAME:latest
-          path: "./packages/frontend/Dockerfile"
           fail-build: true
 
       - name: grype scan JSON results
