@@ -4,9 +4,11 @@ from OpenSSL import crypto
 import requests
 import jwt
 import json
+import urllib.parse
 from datetime import datetime, timedelta
 
-from swagger_client import Customer, ApiClient, CustomerApi, BusinessRelationApi
+from swagger_client import Customer, ApiClient, CustomerApi, BusinessRelationApi, JournalEntryApi
+from swagger_client import AccountMandatoryDimensionApi, AccountGroupSetApi,AccountApi, AccountVisibilityGroupApi
 
 
 class ApiConnection:
@@ -250,6 +252,26 @@ class ApiConnection:
         res = customerApi.customers_id_put(data, customer_id)
         return res
 
+    def get_journal_entries(self, *args):
+        journalEntryApi = JournalEntryApi(self.apiClient)
+        return journalEntryApi.journalentries_get()
+
+    def get_accounts(self):
+        accountApi = AccountApi(self.apiClient)
+        return accountApi.accounts_get()
+
+    def get_account_group_sets(self):
+        accountGroupSetApi = AccountGroupSetApi(self.apiClient)
+        return accountGroupSetApi.accountgroupsets_get()
+
+    def get_account_mandatory_dimension(self):
+        accountMandatoryDimensionApi = AccountMandatoryDimensionApi(self.apiClient)
+        return accountMandatoryDimensionApi.accountmandatorydimension_get()
+
+    def get_account_visibility_groups(self):
+        accountVisibilityGroupApi = AccountVisibilityGroupApi(self.apiClient)
+        return accountVisibilityGroupApi.accountvisibilitygroups_get()
+
 if __name__ == '__main__':
 
     client_id = "3a726a33-0f53-44a7-8415-a44dff248d77"
@@ -267,7 +289,19 @@ if __name__ == '__main__':
     chg = conn.update_customer_new(new_customer.id, new_customer)
     # NB!: Må sende in kunde-objekt med oppdaterte verdier, ikke bare en dictionary med de verdiene du ønsker å endre
     updated_customer,br = conn.get_customers_new(new_customer.id)
-    print(updated_customer.org_number)
-    print(br.name)
-    print(updated_customer.avtale_giro)
+    journal_entries = conn.get_journal_entries()
+    accounts = conn.get_accounts()
+    account_group_sets = conn.get_account_group_sets()
+    account_mandatory_dimension = conn.get_account_mandatory_dimension()
+    account_visibility_group = conn.get_account_visibility_groups()
+
+    print(journal_entries)
+    print(accounts)
+    print(account_group_sets)
+    print(account_mandatory_dimension)
+    print(account_visibility_group)
+
+    #print(updated_customer.org_number)
+    #print(br.name)
+    #print(updated_customer.avtale_giro)
     rem = conn.delete_customer_new(new_customer.id)

@@ -72,6 +72,8 @@ class JournalEntryApi(object):
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
+        all_params.append('top')
+        all_params.append('filter')
 
         params = locals()
         for key, val in six.iteritems(params['kwargs']):
@@ -87,7 +89,12 @@ class JournalEntryApi(object):
 
         path_params = {}
 
-        query_params = []
+        if "top" in params:
+            query_params = [("top",params["top"])]
+        elif "filter" in params:
+            query_params = [("filter",params["filter"])]
+        else:
+            query_params = []
 
         header_params = {}
 
