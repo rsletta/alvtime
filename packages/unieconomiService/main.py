@@ -1,6 +1,7 @@
 from flask import Flask, Response, request
+from waitress import serve
 
-# Selfmade packages
+# Self made packages
 from endpointHandler import EndpointHandler
 
 # SKAL FJERNES
@@ -30,8 +31,12 @@ class AppServer(object):
 
         self.app = Flask("UniEconomy Integration Api")
         self.add_endpoints()
-        self.app.run(debug=True, host='127.0.0.1')
+        serve(self.app, host='127.0.0.1', port='8080')
 
+    # Adder alle API-endpunkter som skal lages.
+    # rule setter URLen
+    # endpoint er bare "navnet" på regelen
+    # view_func er funksjonen som kjøres når man går til endepunktet
     def add_endpoints(self):
         self.app.add_url_rule(rule='/financial_data', endpoint='financial_data', view_func=self.handle.financial_data, methods=["GET"])
         self.app.add_url_rule(rule='/customers', endpoint='customers', view_func=self.handle.customers, methods=["GET"])

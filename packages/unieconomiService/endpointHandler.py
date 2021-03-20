@@ -15,11 +15,14 @@ class EndpointHandler:
         self.audience = audience
         self.api_base_url = api_base_url
 
+    # Defines the various HTTP responses.
+    # Response returned is a Flask type Response
     def create_200_response(self, body, content_type):
         return Response(status=200, content_type=content_type, response=body)
 
     def create_404_response(self, body):
         return Response(status=404, content_type="text/html", response=body)
+
     # Fetches the list of customers.
     #
     # Needs:
@@ -31,13 +34,23 @@ class EndpointHandler:
         else:
             return self.create_404_response("HTTP Method not allowed")
 
+    # Handles fetching information about, creation of and changes to specific customers
+    # Needs:
+    #   -   id *
+    #
+    # Output:
+    #   -   The JSON returned by Unieconomy when performing the action
+    #
+    # * Note:
+    #   -   When creating the input id should be the organisation number
+    #   -   When fetching info about and making changes, you need to use the id defined by Unieconomy
+    #       The id set by Unieconomy is included in the response when creating a customer
     def customer(self, id=None):
         conn = ApiConnection(self.client_id, self.audience, self.api_base_url)
         if request.method == "GET":
             resp = conn.get_customer(id)
             return self.create_200_response(json.dumps(resp.to_dict()), "application/json")
         if request.method == "PUT":
-            #print(request.form)
             # !!! Lag sjekk for om ID er allerede brukt
             cust_name = request.form['name']
             resp = conn.create_customer(cust_name, id)
