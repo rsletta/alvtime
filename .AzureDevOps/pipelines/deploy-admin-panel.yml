@@ -6,9 +6,6 @@ trigger:
 pr: none
 
 variables:
-  - group: subscriptionIds
-  - group: terraformStateStorage
-
   - name: dockerHubServiceConnection
     value: alvdockerdev
 
@@ -66,9 +63,9 @@ jobs:
           command: init
           workingDirectory: $(packageDiractory)
           backendServiceArm: $(azureServiceConnection)
-          backendAzureRmResourceGroupName: $(terraformStateStorageResourceGroup)
-          backendAzureRmStorageAccountName: $(terraformStateStorageStorageAccount)
-          backendAzureRmContainerName: $(terraformStateStoreageContainer)
+          backendAzureRmResourceGroupName: "Alvtime-common"
+          backendAzureRmStorageAccountName: "terraformstatealvprod"
+          backendAzureRmContainerName: "terraformstate"
           backendAzureRmKey: "$(serviceName).tfstate"
 
       - task: TerraformTaskV1@0
@@ -91,7 +88,7 @@ jobs:
           provider: azurerm
           workingDirectory: $(packageDiractory)
           command: plan
-          commandOptions: '-var "git_hash=$(shortHash)" -var "subscription_id=$(subscriptionIdProduction)" -var "service_name=$(serviceName)" -out=tfplan'
+          commandOptions: '-var "git_hash=$(shortHash)" -var "subscription_id=f9b4e4d2-39a5-4c35-876c-303dc3de03d2" -var "service_name=$(serviceName)" -out=tfplan'
           environmentServiceNameAzureRM: $(azureServiceConnection)
 
       - task: TerraformTaskV1@0
