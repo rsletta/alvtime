@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AlvTime.Business.EconomyData;
+using AlvTime.Business.FlexiHours;
 using AlvTimeWebApi.Authentication;
 using AlvTimeWebApi.Controllers.Utils;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,12 @@ namespace AlvTimeWebApi.Controllers.EconomyData
     public class SalaryController : Controller
     {
         private readonly ISalaryService _salaryService;
+        private readonly IFlexhourStorage _flexhourStorage;
 
-        public SalaryController(ISalaryService salaryService)
+        public SalaryController(ISalaryService salaryService, IFlexhourStorage flexhourStorage)
         {
             _salaryService = salaryService;
+            _flexhourStorage = flexhourStorage;
         }
 
         [AuthorizeAdmin]
@@ -39,6 +42,13 @@ namespace AlvTimeWebApi.Controllers.EconomyData
             }
 
             return Ok(employeesSalaryData);
+        }
+        
+        //[AuthorizeAdmin]
+        [HttpGet("/overtimePayouts/{year}/{month}")]
+        public ActionResult<List<EmployeeWithOvertimePayoutResponseDto>> GetOvertimePayoutForEmployees(int year, int month)
+        {
+            return Ok(_flexhourStorage.GetOvetimePayoutForAllEmployeesForMonth(year, month));
         }
 
         private EmployeeSalaryResponse ToEmployeeSalaryResponse(EmployeeSalaryDto employeeHourlySalary)

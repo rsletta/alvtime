@@ -6,5 +6,6 @@ namespace AlvTime.Business.EconomyData
     {
         EmployeeSalaryDto RegisterHourlySalary(EmployeeSalaryRequest employeeSalaryData);
         List<EmployeeSalaryDto> GetEmployeeSalaryData(int userId);
+        List<OvertimePayoutDto> GetOvertimePayoutForMonth(int year, int month, int userId);
     }
 }

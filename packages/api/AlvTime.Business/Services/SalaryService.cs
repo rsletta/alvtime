@@ -25,6 +25,11 @@ namespace AlvTime.Business.Services
             return _overtimePayoutStorage.SaveOvertimePayout(overtimePayout);
         }
 
+        public List<OvertimePayoutDto> GetOvertimePayoutForMonth(int year, int month, int userId)
+        {
+            return _employeeHourlySalaryStorage.GetOvertimePayoutForMonth(year, month, userId);
+        }
+
         public EmployeeSalaryDto RegisterHourlySalary(EmployeeSalaryRequest employeeSalaryData)
         {
             return _employeeHourlySalaryStorage.RegisterHourlySalary(employeeSalaryData);

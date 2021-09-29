@@ -31,7 +31,7 @@ namespace Tests.UnitTests.Flexihours
             _economyDataContext.SaveChanges();
             var sut = FlexiHoursTestUtils.CreateStorage(_context, _economyDataContext);
 
-            var overtimeSalary = sut.RegisterOvertimePayout(
+            var overtimePayout = sut.CalculateOvertimePayout(
                 new List<OvertimeEntry>
                 {
                     new() {CompensationRate = 1.0M, Date = new DateTime(2020, 01, 01), Hours = 1, TaskId = 1}
@@ -40,7 +40,7 @@ namespace Tests.UnitTests.Flexihours
                 new GenericHourEntry { Date = new DateTime(2020, 01, 02), Hours = 1.0M },
                 1);
             
-            Assert.Equal(300.0M, overtimeSalary);
+            Assert.Equal(300.0M, overtimePayout.TotalPayout);
         }
 
         [Fact]
@@ -65,7 +65,7 @@ namespace Tests.UnitTests.Flexihours
             _economyDataContext.SaveChanges();
             var sut = FlexiHoursTestUtils.CreateStorage(_context, _economyDataContext);
 
-            var overtimeSalary = sut.RegisterOvertimePayout(
+            var overtimePayout = sut.CalculateOvertimePayout(
                 new List<OvertimeEntry>
                 {
                     new() {CompensationRate = 1.0M, Date = new DateTime(2020, 01, 01), Hours = 1, TaskId = 1},
@@ -75,7 +75,7 @@ namespace Tests.UnitTests.Flexihours
                 new GenericHourEntry { Date = new DateTime(2021, 08, 02), Hours = 2.0M },
                 1);
 
-            Assert.Equal(700.0M, overtimeSalary);
+            Assert.Equal(700.0M, overtimePayout.TotalPayout);
         }
 
 
@@ -94,7 +94,7 @@ namespace Tests.UnitTests.Flexihours
             _economyDataContext.SaveChanges();
             var sut = FlexiHoursTestUtils.CreateStorage(_context, _economyDataContext);
             
-            var overtimeSalary = sut.RegisterOvertimePayout(
+            var overtimePayout = sut.CalculateOvertimePayout(
                 new List<OvertimeEntry>
                 {
                     new() {CompensationRate = 1.0M, Date = new DateTime(2020, 01, 01), Hours = 1, TaskId = 1},
@@ -104,7 +104,7 @@ namespace Tests.UnitTests.Flexihours
                 new GenericHourEntry { Date = new DateTime(2020, 01, 02), Hours = 2.0M },
                 1);
             
-            Assert.Equal(450.0M, overtimeSalary);
+            Assert.Equal(450.0M, overtimePayout.TotalPayout);
         }
 
         [Fact]
@@ -130,7 +130,7 @@ namespace Tests.UnitTests.Flexihours
             _economyDataContext.SaveChanges();
             var sut = FlexiHoursTestUtils.CreateStorage(_context, _economyDataContext);
 
-            var overtimeSalary = sut.RegisterOvertimePayout(
+            var overtimePayout = sut.CalculateOvertimePayout(
                 new List<OvertimeEntry>
                 {
                     new() {CompensationRate = 1.0M, Date = new DateTime(2020, 01, 01), Hours = 1, TaskId = 1},
@@ -140,7 +140,7 @@ namespace Tests.UnitTests.Flexihours
                 new GenericHourEntry { Date = new DateTime(2020, 01, 02), Hours = 2.0M },
                 1);
 
-            Assert.Equal(500.0M, overtimeSalary);
+            Assert.Equal(500.0M, overtimePayout.TotalPayout);
         }
 
         [Fact]
@@ -172,7 +172,7 @@ namespace Tests.UnitTests.Flexihours
             _economyDataContext.SaveChanges();
             var sut = FlexiHoursTestUtils.CreateStorage(_context, _economyDataContext);
 
-            var overtimeSalary = sut.RegisterOvertimePayout(
+            var overtimePayout = sut.CalculateOvertimePayout(
                 new List<OvertimeEntry>
                 {
                     new() {CompensationRate = 1.0M, Date = new DateTime(2020, 01, 01), Hours = 1, TaskId = 1},
@@ -183,7 +183,7 @@ namespace Tests.UnitTests.Flexihours
                 new GenericHourEntry { Date = new DateTime(2021, 07, 02), Hours = 3.0M },
                 1);
 
-            Assert.Equal(600.0M, overtimeSalary);
+            Assert.Equal(600.0M, overtimePayout.TotalPayout);
         }
     }
 }

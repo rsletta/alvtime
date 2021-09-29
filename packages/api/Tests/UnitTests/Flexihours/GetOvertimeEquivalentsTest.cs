@@ -350,7 +350,11 @@ namespace Tests.UnitTests.Flexihours
                     StartOfOvertimeSystem = new DateTime(2019, 01, 01)
                 }
                 ),
-                new SalaryService(new OvertimePayoutStorage(_economyDataContext), new EmployeeHourlySalaryStorage(_economyDataContext, _context)));
+                new SalaryService(new OvertimePayoutStorage(_economyDataContext), new EmployeeHourlySalaryStorage(_economyDataContext, _context)),
+                new TestFlexiHourOptions(new FelxiHourOptions
+                {
+                    StartOfPayoutRegistrationInEconomyDb = new DateTime(2021, 11, 01)
+                }));
 
             var OTequivalents = calculator.GetAvailableHours(1, user.StartDate, _endDate).AvailableHoursAfterCompensation;
             Assert.Equal(6M, OTequivalents);

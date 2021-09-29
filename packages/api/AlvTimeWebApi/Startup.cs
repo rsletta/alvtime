@@ -40,6 +40,7 @@ namespace AlvTimeWebApi
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddAlvtimeAuthentication(Configuration);
             services.Configure<TimeEntryOptions>(Configuration.GetSection("TimeEntryOptions"));
+            services.Configure<FelxiHourOptions>(Configuration.GetSection("FelxiHourOptions"));
             services.AddAlvtimeAuthorization();
             services.AddSwaggerGen(c =>
             {

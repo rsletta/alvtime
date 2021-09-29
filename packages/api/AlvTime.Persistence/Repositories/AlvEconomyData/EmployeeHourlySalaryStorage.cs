@@ -22,7 +22,7 @@ namespace AlvTime.Persistence.Repositories.AlvEconomyData
         public EmployeeSalaryDto RegisterHourlySalary(EmployeeSalaryRequest employeeSalaryData)
         {
             var employee = _context.User.FirstOrDefault(e => e.Id == employeeSalaryData.UserId);
-            
+
             if (employee == null)
                 throw new ValidationException($"Could not find a an employee with id {employeeSalaryData.UserId}");
 
@@ -49,7 +49,7 @@ namespace AlvTime.Persistence.Repositories.AlvEconomyData
 
             _economyContext.EmployeeHourlySalaries.Add(hourlySalaryEntity);
             _economyContext.SaveChanges();
-            
+
             return ToEmployeeSalary(hourlySalaryEntity);
         }
 
@@ -63,14 +63,34 @@ namespace AlvTime.Persistence.Repositories.AlvEconomyData
 
             return employeeWithSalaryData.Select(hourlySalary => ToEmployeeSalary(hourlySalary)).ToList();
         }
+
+        public List<OvertimePayoutDto> GetOvertimePayoutForMonth(int year, int month, int userId)
+        {
+            var overtimePayout = _economyContext.OvertimePayouts.Where(payout =>
+                payout.UserId == userId && payout.Date.Year == year && payout.Date.Month == month).ToList();
+
+            return overtimePayout.Select(ToOvertimePayoutDto).ToList();
+        }
+
         private EmployeeSalaryDto ToEmployeeSalary(EmployeeHourlySalary employeeHourlySalary)
         {
             return new(
-                employeeHourlySalary.UserId, 
-                employeeHourlySalary.HourlySalary, 
-                employeeHourlySalary.FromDateInclusive, 
-                employeeHourlySalary.ToDate, 
+                employeeHourlySalary.UserId,
+                employeeHourlySalary.HourlySalary,
+                employeeHourlySalary.FromDateInclusive,
+                employeeHourlySalary.ToDate,
                 employeeHourlySalary.Id);
+        }
+
+
+        private OvertimePayoutDto ToOvertimePayoutDto(OvertimePayout overtimePayout)
+        {
+            return new(
+                overtimePayout.Id, 
+                overtimePayout.UserId, 
+                overtimePayout.Date,
+                overtimePayout.TotalPayout, 
+                overtimePayout.RegisteredPaidOvertimeId);
         }
     }
 }

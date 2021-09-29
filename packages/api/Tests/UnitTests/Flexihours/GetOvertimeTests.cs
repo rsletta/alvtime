@@ -242,16 +242,21 @@ namespace Tests.UnitTests.Flexihours
 
         private FlexhourStorage CreateStorage()
         {
-            return new FlexhourStorage(new TimeEntryStorage(_context), _context, new TestTimeEntryOptions(
+            return new FlexhourStorage(
+                new TimeEntryStorage(_context), _context, new TestTimeEntryOptions(
                 new TimeEntryOptions { 
                     FlexTask = 18,
                     PaidHolidayTask = 13,
                     UnpaidHolidayTask = 19,
                     ReportUser = 11, 
                     StartOfOvertimeSystem = new DateTime(2021, 01, 01) 
-                }),  
+                } ),  
                 
-                new SalaryService(new OvertimePayoutStorage(_economyDataContext),new EmployeeHourlySalaryStorage(_economyDataContext, _context)));
+                new SalaryService(new OvertimePayoutStorage(_economyDataContext),new EmployeeHourlySalaryStorage(_economyDataContext, _context)), 
+                new TestFlexiHourOptions(new FelxiHourOptions
+                {
+                    StartOfPayoutRegistrationInEconomyDb = new DateTime(2021, 11, 01)
+                }));
         }
 
         private static Hours CreateFlexEntry(DateTime date, decimal value)
@@ -281,6 +286,25 @@ namespace Tests.UnitTests.Flexihours
             }
 
             public IDisposable OnChange(Action<TimeEntryOptions, string> listener)
+            {
+                throw new NotImplementedException();
+            }
+        }
+        public class TestFlexiHourOptions : IOptionsMonitor<FelxiHourOptions>
+        {
+            public FelxiHourOptions CurrentValue { get; }
+
+            public TestFlexiHourOptions(FelxiHourOptions currentValue)
+            {
+                CurrentValue = currentValue;
+            }
+
+            public FelxiHourOptions Get(string name)
+            {
+                return CurrentValue;
+            }
+
+            public IDisposable OnChange(Action<FelxiHourOptions, string> listener)
             {
                 throw new NotImplementedException();
             }
