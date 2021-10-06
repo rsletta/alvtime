@@ -52,7 +52,7 @@ Vue.use(MdDatepicker);
 Vue.use(VueClipboard);
 
 Vue.config.productionTip = false;
-Vue.config.ignoredElements = ["yr-extra", "side-drawer"];
+Vue.config.ignoredElements = ["side-drawer"];
 
 new Vue({
   router,

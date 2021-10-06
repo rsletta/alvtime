@@ -33,7 +33,13 @@
         </div>
       </md-app-content>
     </md-app>
-    <side-drawer @close="toggleDrawer()" style="background-color:#012a38" :open.prop="$store.state.weatherDrawerOpen"><yr-extra></yr-extra></side-drawer>
+    <side-drawer
+      style="background-color:#012a38"
+      :open.prop="$store.state.weatherDrawerOpen"
+      @close="toggleDrawer()"
+    >
+      <!-- HER BURDE DET VÆRT EN MICRO FRONTEND!!!! -->
+    </side-drawer>
     <div class="floating-button" @click="toggleDrawer()">
       <div class="floating-wrapper">
         <md-icon>wb_sunny</md-icon>
@@ -197,12 +203,11 @@ html {
   width: 100%;
   height: 100%;
   display: flex;
-
 }
 
 .floating-button i {
-  color: #eabb26!important;
-  font-size: 40px!important;
+  color: #eabb26 !important;
+  font-size: 40px !important;
 }
 
 .floating-button :hover {
@@ -211,8 +216,6 @@ html {
 }
 
 .floating-button:hover i {
-  color: #000!important;
+  color: #000 !important;
   transition: all 0.5s;
-
 }
-</style>
