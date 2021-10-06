@@ -12,7 +12,8 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "jest"
+      "jest",
+      "@material/mwc-drawer"
     ],
     "paths": {
       "@/*": [
@@ -27,6 +28,7 @@
     ]
   },
   "include": [
+    "node_modules/side-drawer/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",

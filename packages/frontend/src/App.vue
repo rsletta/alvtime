@@ -6,11 +6,7 @@
           <div class="md-toolbar-section-start">
             <router-link to="/">
               <div class="logo_grid" @click="openGapestokk">
-                <img
-                  class="light logo"
-                  src="/img/logo_white.svg"
-                  alt="Hvit Alv-logo"
-                />
+                <img class="light logo" src="/img/logo_white.svg" alt="Hvit Alv-logo" />
               </div>
             </router-link>
           </div>
@@ -18,7 +14,6 @@
             <hamburger v-if="userFound" />
           </div>
         </div>
-
         <div class="md-toolbar-row">
           <CenterColumnWrapper>
             <Toolbar />
@@ -38,6 +33,12 @@
         </div>
       </md-app-content>
     </md-app>
+    <side-drawer @close="toggleDrawer()" style="background-color:#012a38" :open.prop="$store.state.weatherDrawerOpen"><yr-extra></yr-extra></side-drawer>
+    <div class="floating-button" @click="toggleDrawer()">
+      <div class="floating-wrapper">
+        <md-icon>wb_sunny</md-icon>
+      </div>
+    </div>
     <DayFooter />
   </div>
 </template>
@@ -53,6 +54,7 @@ import Hamburger from "@/components/Hamburger.vue";
 import Drawer from "@/components/Drawer.vue";
 import DayFooter from "@/components/DayFooter.vue";
 import CenterColumnWrapper from "@/components/CenterColumnWrapper.vue";
+import "side-drawer";
 
 export default Vue.extend({
   components: {
@@ -104,6 +106,9 @@ export default Vue.extend({
   },
 
   methods: {
+    toggleDrawer() {
+      this.$store.commit("TOGGLE_WEATHER_DRAWER");
+    },
     openGapestokk() {
       this.$store.commit("SET_DONT_SHOW_GAPESTOKK", false);
     },
@@ -173,5 +178,41 @@ html {
 
 .logo_text {
   color: white;
+}
+
+.floating-button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  border-style: solid;
+  border-color: #eabb26;
+  border-width: 2px;
+  border-radius: 30px;
+  height: 58px;
+  width: 58px;
+}
+
+.floating-wrapper {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+
+.floating-button i {
+  color: #eabb26!important;
+  font-size: 40px!important;
+}
+
+.floating-button :hover {
+  background-color: #eabb26;
+  transition: all 0.5s;
+}
+
+.floating-button:hover i {
+  color: #000!important;
+  transition: all 0.5s;
+
 }
 </style>

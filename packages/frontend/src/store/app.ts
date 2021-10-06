@@ -16,6 +16,7 @@ export interface AppState {
   interactionState: InteractionState;
   editing: boolean;
   drawerOpen: boolean;
+  weatherDrawerOpen: boolean;
   currentRoute: Route;
   dontShowGapestokk: boolean;
 }
@@ -28,6 +29,7 @@ const state = {
   interactionState: { oldState: "", newState: "" },
   editing: false,
   drawerOpen: false,
+  weatherDrawerOpen: false,
   currentRoute: {} as Route,
   dontShowGapestokk: store("dontShowGapestokk"),
 };
@@ -67,6 +69,10 @@ const mutations = {
 
   TOGGLE_DRAWER(state: State) {
     state.drawerOpen = !state.drawerOpen;
+  },
+
+  TOGGLE_WEATHER_DRAWER(state: State) {
+    state.weatherDrawerOpen = !state.weatherDrawerOpen;
   },
 
   SET_CURRENT_ROUTE(state: State, route: Route) {
