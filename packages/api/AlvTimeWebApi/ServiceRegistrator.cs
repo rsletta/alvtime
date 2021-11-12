@@ -31,7 +31,6 @@ namespace AlvTimeWebApi
             services.AddScoped<UserCreator>();
             services.AddScoped<AlvHoursCalculator>();
             services.AddScoped<ITaskStorage, TaskStorage>();
-            services.AddScoped<FavoriteUpdater>();
             services.AddScoped<TaskCreator>();
             services.AddScoped<ITimeEntryStorage, TimeEntryStorage>();
             services.AddScoped<TimeEntryCreator>();
@@ -50,6 +49,7 @@ namespace AlvTimeWebApi
             services.AddScoped<IAbsenseDaysService, AbsenseDaysService>();
             services.AddScoped<AccessTokenService>();
             services.AddScoped<IUserContext, UserContext>();
+            services.AddScoped<TaskService>();
         }
     }
 }
