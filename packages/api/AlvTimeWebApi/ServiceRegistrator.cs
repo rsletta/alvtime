@@ -31,7 +31,6 @@ namespace AlvTimeWebApi
             services.AddScoped<UserCreator>();
             services.AddScoped<AlvHoursCalculator>();
             services.AddScoped<ITaskStorage, TaskStorage>();
-            services.AddScoped<TaskCreator>();
             services.AddScoped<ITimeEntryStorage, TimeEntryStorage>();
             services.AddScoped<TimeEntryCreator>();
             services.AddScoped<IHourRateStorage, HourRateStorage>();
