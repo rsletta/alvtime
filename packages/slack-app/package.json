@@ -7,7 +7,7 @@
     "start": "npm run serve",
     "build": "npm run build-ts && npm run lint",
     "serve": "node dist/app.js",
-    "watch-node": "nodemon dist/app.js",
+    "watch-node": "nodemon dist/app.js | pino-pretty",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "test": "jest --forceExit --coverage --verbose",
     "watch-test": "npm run test -- --watchAll",
@@ -39,6 +39,7 @@
     "passport-oauth2": "^1.5.0",
     "pino": "^6.3.2",
     "pino-http": "^5.2.0",
+    "pino-pretty": "^7.2.0",
     "uuid": "^8.0.0"
   },
   "engines": {
